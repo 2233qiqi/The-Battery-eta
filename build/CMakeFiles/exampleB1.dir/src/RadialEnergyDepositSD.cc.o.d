@@ -1,7 +1,7 @@
 CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.o: \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/src/RadialEnergyDepositSD.cc \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/src/RadialEnergyDepositSD.cc \
  /usr/include/stdc-predef.h \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/RadialEnergyDepositSD.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/RadialEnergyDepositSD.hh \
  /home/qiqi/Geant4/include/Geant4/G4VSensitiveDetector.hh \
  /home/qiqi/Geant4/include/Geant4/G4CollectionNameVector.hh \
  /home/qiqi/Geant4/include/Geant4/globals.hh \

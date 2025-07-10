@@ -1,7 +1,7 @@
 CMakeFiles/exampleB1.dir/src/PhysicsList.cc.o: \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/src/PhysicsList.cc \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/src/PhysicsList.cc \
  /usr/include/stdc-predef.h \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/PhysicsList.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/PhysicsList.hh \
  /home/qiqi/Geant4/include/Geant4/G4VModularPhysicsList.hh \
  /home/qiqi/Geant4/include/Geant4/G4VPhysicsConstructor.hh \
  /home/qiqi/Geant4/include/Geant4/G4ParticleTable.hh \

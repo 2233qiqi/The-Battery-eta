@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta"
+CMAKE_SOURCE_DIR = "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/build"
+CMAKE_BINARY_DIR = "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/build"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/exampleB1.dir/clean
 CMakeFiles/exampleB1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exampleB1.dir/build.make CMakeFiles/exampleB1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target exampleB1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target exampleB1"
 .PHONY : CMakeFiles/exampleB1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/exampleB1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/build/CMakeFiles" 11
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/build/CMakeFiles" 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/exampleB1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/build/CMakeFiles" 0
 .PHONY : CMakeFiles/exampleB1.dir/rule
 
 # Convenience name for target.

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta"
+CMAKE_SOURCE_DIR = "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/build"
+CMAKE_BINARY_DIR = "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/exampleB1.dir/depend.make
@@ -70,144 +70,144 @@ include CMakeFiles/exampleB1.dir/progress.make
 include CMakeFiles/exampleB1.dir/flags.make
 
 CMakeFiles/exampleB1.dir/smcd.cc.o: CMakeFiles/exampleB1.dir/flags.make
-CMakeFiles/exampleB1.dir/smcd.cc.o: /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/smcd.cc
+CMakeFiles/exampleB1.dir/smcd.cc.o: /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/smcd.cc
 CMakeFiles/exampleB1.dir/smcd.cc.o: CMakeFiles/exampleB1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exampleB1.dir/smcd.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB1.dir/smcd.cc.o -MF CMakeFiles/exampleB1.dir/smcd.cc.o.d -o CMakeFiles/exampleB1.dir/smcd.cc.o -c "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/smcd.cc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exampleB1.dir/smcd.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB1.dir/smcd.cc.o -MF CMakeFiles/exampleB1.dir/smcd.cc.o.d -o CMakeFiles/exampleB1.dir/smcd.cc.o -c "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/smcd.cc"
 
 CMakeFiles/exampleB1.dir/smcd.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/smcd.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/smcd.cc" > CMakeFiles/exampleB1.dir/smcd.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/smcd.cc" > CMakeFiles/exampleB1.dir/smcd.cc.i
 
 CMakeFiles/exampleB1.dir/smcd.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/smcd.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/smcd.cc" -o CMakeFiles/exampleB1.dir/smcd.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/smcd.cc" -o CMakeFiles/exampleB1.dir/smcd.cc.s
 
 CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.o: CMakeFiles/exampleB1.dir/flags.make
-CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.o: /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/src/ActionInitialization.cc
+CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.o: /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/src/ActionInitialization.cc
 CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.o: CMakeFiles/exampleB1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.o -MF CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.o.d -o CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.o -c "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/ActionInitialization.cc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.o -MF CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.o.d -o CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.o -c "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/ActionInitialization.cc"
 
 CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/ActionInitialization.cc" > CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/ActionInitialization.cc" > CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.i
 
 CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/ActionInitialization.cc" -o CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/ActionInitialization.cc" -o CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.s
 
 CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.o: CMakeFiles/exampleB1.dir/flags.make
-CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.o: /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/src/DetectorConstruction.cc
+CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.o: /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/src/DetectorConstruction.cc
 CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.o: CMakeFiles/exampleB1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.o -MF CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.o.d -o CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.o -c "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/DetectorConstruction.cc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.o -MF CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.o.d -o CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.o -c "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/DetectorConstruction.cc"
 
 CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/DetectorConstruction.cc" > CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/DetectorConstruction.cc" > CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.i
 
 CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/DetectorConstruction.cc" -o CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/DetectorConstruction.cc" -o CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.s
 
 CMakeFiles/exampleB1.dir/src/EventAction.cc.o: CMakeFiles/exampleB1.dir/flags.make
-CMakeFiles/exampleB1.dir/src/EventAction.cc.o: /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/src/EventAction.cc
+CMakeFiles/exampleB1.dir/src/EventAction.cc.o: /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/src/EventAction.cc
 CMakeFiles/exampleB1.dir/src/EventAction.cc.o: CMakeFiles/exampleB1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/exampleB1.dir/src/EventAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB1.dir/src/EventAction.cc.o -MF CMakeFiles/exampleB1.dir/src/EventAction.cc.o.d -o CMakeFiles/exampleB1.dir/src/EventAction.cc.o -c "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/EventAction.cc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/exampleB1.dir/src/EventAction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB1.dir/src/EventAction.cc.o -MF CMakeFiles/exampleB1.dir/src/EventAction.cc.o.d -o CMakeFiles/exampleB1.dir/src/EventAction.cc.o -c "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/EventAction.cc"
 
 CMakeFiles/exampleB1.dir/src/EventAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/src/EventAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/EventAction.cc" > CMakeFiles/exampleB1.dir/src/EventAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/EventAction.cc" > CMakeFiles/exampleB1.dir/src/EventAction.cc.i
 
 CMakeFiles/exampleB1.dir/src/EventAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/src/EventAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/EventAction.cc" -o CMakeFiles/exampleB1.dir/src/EventAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/EventAction.cc" -o CMakeFiles/exampleB1.dir/src/EventAction.cc.s
 
 CMakeFiles/exampleB1.dir/src/PhysicsList.cc.o: CMakeFiles/exampleB1.dir/flags.make
-CMakeFiles/exampleB1.dir/src/PhysicsList.cc.o: /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/src/PhysicsList.cc
+CMakeFiles/exampleB1.dir/src/PhysicsList.cc.o: /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/src/PhysicsList.cc
 CMakeFiles/exampleB1.dir/src/PhysicsList.cc.o: CMakeFiles/exampleB1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/exampleB1.dir/src/PhysicsList.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB1.dir/src/PhysicsList.cc.o -MF CMakeFiles/exampleB1.dir/src/PhysicsList.cc.o.d -o CMakeFiles/exampleB1.dir/src/PhysicsList.cc.o -c "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/PhysicsList.cc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/exampleB1.dir/src/PhysicsList.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB1.dir/src/PhysicsList.cc.o -MF CMakeFiles/exampleB1.dir/src/PhysicsList.cc.o.d -o CMakeFiles/exampleB1.dir/src/PhysicsList.cc.o -c "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/PhysicsList.cc"
 
 CMakeFiles/exampleB1.dir/src/PhysicsList.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/src/PhysicsList.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/PhysicsList.cc" > CMakeFiles/exampleB1.dir/src/PhysicsList.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/PhysicsList.cc" > CMakeFiles/exampleB1.dir/src/PhysicsList.cc.i
 
 CMakeFiles/exampleB1.dir/src/PhysicsList.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/src/PhysicsList.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/PhysicsList.cc" -o CMakeFiles/exampleB1.dir/src/PhysicsList.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/PhysicsList.cc" -o CMakeFiles/exampleB1.dir/src/PhysicsList.cc.s
 
 CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.o: CMakeFiles/exampleB1.dir/flags.make
-CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.o: /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/src/PrimaryGenertor.cc
+CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.o: /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/src/PrimaryGenertor.cc
 CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.o: CMakeFiles/exampleB1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.o -MF CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.o.d -o CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.o -c "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/PrimaryGenertor.cc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.o -MF CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.o.d -o CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.o -c "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/PrimaryGenertor.cc"
 
 CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/PrimaryGenertor.cc" > CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/PrimaryGenertor.cc" > CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.i
 
 CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/PrimaryGenertor.cc" -o CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/PrimaryGenertor.cc" -o CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.s
 
 CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.o: CMakeFiles/exampleB1.dir/flags.make
-CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.o: /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/src/RadialEnergyDepositSD.cc
+CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.o: /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/src/RadialEnergyDepositSD.cc
 CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.o: CMakeFiles/exampleB1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.o -MF CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.o.d -o CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.o -c "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/RadialEnergyDepositSD.cc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.o -MF CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.o.d -o CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.o -c "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/RadialEnergyDepositSD.cc"
 
 CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/RadialEnergyDepositSD.cc" > CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/RadialEnergyDepositSD.cc" > CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.i
 
 CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/RadialEnergyDepositSD.cc" -o CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/RadialEnergyDepositSD.cc" -o CMakeFiles/exampleB1.dir/src/RadialEnergyDepositSD.cc.s
 
 CMakeFiles/exampleB1.dir/src/RunAction.cc.o: CMakeFiles/exampleB1.dir/flags.make
-CMakeFiles/exampleB1.dir/src/RunAction.cc.o: /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/src/RunAction.cc
+CMakeFiles/exampleB1.dir/src/RunAction.cc.o: /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/src/RunAction.cc
 CMakeFiles/exampleB1.dir/src/RunAction.cc.o: CMakeFiles/exampleB1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/exampleB1.dir/src/RunAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB1.dir/src/RunAction.cc.o -MF CMakeFiles/exampleB1.dir/src/RunAction.cc.o.d -o CMakeFiles/exampleB1.dir/src/RunAction.cc.o -c "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/RunAction.cc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/exampleB1.dir/src/RunAction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB1.dir/src/RunAction.cc.o -MF CMakeFiles/exampleB1.dir/src/RunAction.cc.o.d -o CMakeFiles/exampleB1.dir/src/RunAction.cc.o -c "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/RunAction.cc"
 
 CMakeFiles/exampleB1.dir/src/RunAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/src/RunAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/RunAction.cc" > CMakeFiles/exampleB1.dir/src/RunAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/RunAction.cc" > CMakeFiles/exampleB1.dir/src/RunAction.cc.i
 
 CMakeFiles/exampleB1.dir/src/RunAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/src/RunAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/RunAction.cc" -o CMakeFiles/exampleB1.dir/src/RunAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/RunAction.cc" -o CMakeFiles/exampleB1.dir/src/RunAction.cc.s
 
 CMakeFiles/exampleB1.dir/src/SingleParticleSD.cc.o: CMakeFiles/exampleB1.dir/flags.make
-CMakeFiles/exampleB1.dir/src/SingleParticleSD.cc.o: /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/src/SingleParticleSD.cc
+CMakeFiles/exampleB1.dir/src/SingleParticleSD.cc.o: /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/src/SingleParticleSD.cc
 CMakeFiles/exampleB1.dir/src/SingleParticleSD.cc.o: CMakeFiles/exampleB1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/exampleB1.dir/src/SingleParticleSD.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB1.dir/src/SingleParticleSD.cc.o -MF CMakeFiles/exampleB1.dir/src/SingleParticleSD.cc.o.d -o CMakeFiles/exampleB1.dir/src/SingleParticleSD.cc.o -c "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/SingleParticleSD.cc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/exampleB1.dir/src/SingleParticleSD.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB1.dir/src/SingleParticleSD.cc.o -MF CMakeFiles/exampleB1.dir/src/SingleParticleSD.cc.o.d -o CMakeFiles/exampleB1.dir/src/SingleParticleSD.cc.o -c "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/SingleParticleSD.cc"
 
 CMakeFiles/exampleB1.dir/src/SingleParticleSD.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/src/SingleParticleSD.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/SingleParticleSD.cc" > CMakeFiles/exampleB1.dir/src/SingleParticleSD.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/SingleParticleSD.cc" > CMakeFiles/exampleB1.dir/src/SingleParticleSD.cc.i
 
 CMakeFiles/exampleB1.dir/src/SingleParticleSD.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/src/SingleParticleSD.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/SingleParticleSD.cc" -o CMakeFiles/exampleB1.dir/src/SingleParticleSD.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/SingleParticleSD.cc" -o CMakeFiles/exampleB1.dir/src/SingleParticleSD.cc.s
 
 CMakeFiles/exampleB1.dir/src/SteppingAction.cc.o: CMakeFiles/exampleB1.dir/flags.make
-CMakeFiles/exampleB1.dir/src/SteppingAction.cc.o: /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/src/SteppingAction.cc
+CMakeFiles/exampleB1.dir/src/SteppingAction.cc.o: /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/src/SteppingAction.cc
 CMakeFiles/exampleB1.dir/src/SteppingAction.cc.o: CMakeFiles/exampleB1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/exampleB1.dir/src/SteppingAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB1.dir/src/SteppingAction.cc.o -MF CMakeFiles/exampleB1.dir/src/SteppingAction.cc.o.d -o CMakeFiles/exampleB1.dir/src/SteppingAction.cc.o -c "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/SteppingAction.cc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/exampleB1.dir/src/SteppingAction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/exampleB1.dir/src/SteppingAction.cc.o -MF CMakeFiles/exampleB1.dir/src/SteppingAction.cc.o.d -o CMakeFiles/exampleB1.dir/src/SteppingAction.cc.o -c "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/SteppingAction.cc"
 
 CMakeFiles/exampleB1.dir/src/SteppingAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/exampleB1.dir/src/SteppingAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/SteppingAction.cc" > CMakeFiles/exampleB1.dir/src/SteppingAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/SteppingAction.cc" > CMakeFiles/exampleB1.dir/src/SteppingAction.cc.i
 
 CMakeFiles/exampleB1.dir/src/SteppingAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/exampleB1.dir/src/SteppingAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/src/SteppingAction.cc" -o CMakeFiles/exampleB1.dir/src/SteppingAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/src/SteppingAction.cc" -o CMakeFiles/exampleB1.dir/src/SteppingAction.cc.s
 
 # Object files for target exampleB1
 exampleB1_OBJECTS = \
@@ -275,7 +275,7 @@ exampleB1: /home/qiqi/Geant4/lib/libG4global.so
 exampleB1: /home/qiqi/Geant4/lib/libG4clhep.so
 exampleB1: /home/qiqi/Geant4/lib/libG4ptl.so.3.0.0
 exampleB1: CMakeFiles/exampleB1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable exampleB1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable exampleB1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/exampleB1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -287,6 +287,6 @@ CMakeFiles/exampleB1.dir/clean:
 .PHONY : CMakeFiles/exampleB1.dir/clean
 
 CMakeFiles/exampleB1.dir/depend:
-	cd "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta" "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta" "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/build" "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/build" "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/build/CMakeFiles/exampleB1.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta" "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta" "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/build" "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/build" "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/build/CMakeFiles/exampleB1.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/exampleB1.dir/depend
 

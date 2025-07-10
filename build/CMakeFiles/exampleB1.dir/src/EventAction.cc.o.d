@@ -1,7 +1,7 @@
 CMakeFiles/exampleB1.dir/src/EventAction.cc.o: \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/src/EventAction.cc \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/src/EventAction.cc \
  /usr/include/stdc-predef.h \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/EventAction.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/EventAction.hh \
  /home/qiqi/Geant4/include/Geant4/G4UserEventAction.hh \
  /home/qiqi/Geant4/include/Geant4/G4Event.hh /usr/include/c++/14/set \
  /usr/include/c++/14/bits/requires_hosted.h \
@@ -379,5 +379,5 @@ CMakeFiles/exampleB1.dir/src/EventAction.cc.o: \
  /home/qiqi/Geant4/include/Geant4/G4VReadOutGeometry.hh \
  /home/qiqi/Geant4/include/Geant4/G4SensitiveVolumeList.hh \
  /home/qiqi/Geant4/include/Geant4/G4VSDFilter.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/RadialEnergyDepositSD.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/RadialEnergyDepositSD.hh \
  /home/qiqi/Geant4/include/Geant4/G4VSensitiveDetector.hh

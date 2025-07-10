@@ -24,7 +24,7 @@
 /vis/set/textColour green
 
 /vis/set/textLayout right
-/vis/scene/add/text2D 0.9 -.9 24 ! ! exampleB1
+/vis/scene/add/text2D 0.9 -.9 24 ! ! Battery
 
 /vis/set/textLayout
 /vis/set/textColour
@@ -45,15 +45,14 @@
 # Initialize GPS
 
 /gps/particle e-
-/gps/pos/type Plane
-/gps/pos/shape Square
+/gps/pos/type Point
+
 /gps/pos/centre 0 0 -2.5 um
-/gps/pos/halfx 10 um
-/gps/pos/halfy 10 um
 
 
-#/gps/direction 0 0 1  //定向Z轴发射
-/gps/ang/type iso
+/gps/direction 0 0 1  //定向Z轴发射
+#/gps/ang/type iso
+/gps/ene/type Arb
 /gps/hist/type arb
 
 /gps/hist/point 0.001 0.03997

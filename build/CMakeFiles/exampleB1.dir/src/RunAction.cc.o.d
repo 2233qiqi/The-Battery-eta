@@ -1,7 +1,7 @@
 CMakeFiles/exampleB1.dir/src/RunAction.cc.o: \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/src/RunAction.cc \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/src/RunAction.cc \
  /usr/include/stdc-predef.h \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/RunAction.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/RunAction.hh \
  /home/qiqi/Geant4/include/Geant4/G4UserRunAction.hh \
  /home/qiqi/Geant4/include/Geant4/G4Types.hh \
  /home/qiqi/Geant4/include/Geant4/G4GlobalConfig.hh \
@@ -180,7 +180,7 @@ CMakeFiles/exampleB1.dir/src/RunAction.cc.o: \
  /usr/include/c++/14/bits/istream.tcc \
  /usr/include/c++/14/bits/sstream.tcc \
  /home/qiqi/Geant4/include/Geant4/tls.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/SingleParticleSD.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/SingleParticleSD.hh \
  /home/qiqi/Geant4/include/Geant4/G4VSensitiveDetector.hh \
  /home/qiqi/Geant4/include/Geant4/G4CollectionNameVector.hh \
  /home/qiqi/Geant4/include/Geant4/globals.hh \
@@ -363,7 +363,7 @@ CMakeFiles/exampleB1.dir/src/RunAction.cc.o: \
  /home/qiqi/Geant4/include/Geant4/G4VReadOutGeometry.hh \
  /home/qiqi/Geant4/include/Geant4/G4SensitiveVolumeList.hh \
  /home/qiqi/Geant4/include/Geant4/G4VSDFilter.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/RadialEnergyDepositSD.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/RadialEnergyDepositSD.hh \
  /home/qiqi/Geant4/include/Geant4/G4Run.hh \
  /home/qiqi/Geant4/include/Geant4/G4SDManager.hh \
  /home/qiqi/Geant4/include/Geant4/G4HCtable.hh \

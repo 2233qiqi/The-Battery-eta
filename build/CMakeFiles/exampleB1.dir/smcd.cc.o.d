@@ -1,5 +1,5 @@
 CMakeFiles/exampleB1.dir/smcd.cc.o: \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/smcd.cc \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/smcd.cc \
  /usr/include/stdc-predef.h /usr/include/c++/14/iostream \
  /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
@@ -650,9 +650,9 @@ CMakeFiles/exampleB1.dir/smcd.cc.o: \
  /home/qiqi/Geant4/include/Geant4/G4MaterialCutsCouple.hh \
  /home/qiqi/Geant4/include/Geant4/G4ProductionCuts.hh \
  /home/qiqi/Geant4/include/Geant4/G4MCCIndexConversionTable.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/PhysicsList.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/PhysicsList.hh \
  /home/qiqi/Geant4/include/Geant4/G4VModularPhysicsList.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/DetectorConstruction.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/DetectorConstruction.hh \
  /home/qiqi/Geant4/include/Geant4/G4VUserDetectorConstruction.hh \
  /home/qiqi/Geant4/include/Geant4/G4LogicalVolume.hh \
  /home/qiqi/Geant4/include/Geant4/G4VPhysicalVolume.hh \
@@ -679,11 +679,11 @@ CMakeFiles/exampleB1.dir/smcd.cc.o: \
  /home/qiqi/Geant4/include/Geant4/G4VReadOutGeometry.hh \
  /home/qiqi/Geant4/include/Geant4/G4SensitiveVolumeList.hh \
  /home/qiqi/Geant4/include/Geant4/G4VSDFilter.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/SingleParticleSD.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/SingleParticleSD.hh \
  /home/qiqi/Geant4/include/Geant4/G4VSensitiveDetector.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/ActionInitialization.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/ActionInitialization.hh \
  /home/qiqi/Geant4/include/Geant4/G4VUserActionInitialization.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/PrimaryGenerator.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/PrimaryGenerator.hh \
  /home/qiqi/Geant4/include/Geant4/G4Event.hh \
  /home/qiqi/Geant4/include/Geant4/G4GeneralParticleSource.hh \
  /home/qiqi/Geant4/include/Geant4/G4SingleParticleSource.hh \
@@ -699,11 +699,11 @@ CMakeFiles/exampleB1.dir/smcd.cc.o: \
  /home/qiqi/Geant4/include/Geant4/G4ParticleGun.hh \
  /home/qiqi/Geant4/include/Geant4/G4ParticleTable.hh \
  /home/qiqi/Geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/RunAction.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/RunAction.hh \
  /home/qiqi/Geant4/include/Geant4/G4UserRunAction.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/EventAction.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/EventAction.hh \
  /home/qiqi/Geant4/include/Geant4/G4UserEventAction.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/SteppingAction.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/SteppingAction.hh \
  /home/qiqi/Geant4/include/Geant4/G4UserSteppingAction.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/DetectorConstruction.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/DetectorConstruction.hh \
  /home/qiqi/Geant4/include/Geant4/G4Step.hh

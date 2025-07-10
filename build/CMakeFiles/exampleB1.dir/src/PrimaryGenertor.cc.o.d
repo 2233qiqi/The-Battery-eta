@@ -1,7 +1,7 @@
 CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.o: \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/src/PrimaryGenertor.cc \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/src/PrimaryGenertor.cc \
  /usr/include/stdc-predef.h \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/PrimaryGenerator.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/PrimaryGenerator.hh \
  /home/qiqi/Geant4/include/Geant4/G4Event.hh /usr/include/c++/14/set \
  /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
@@ -386,9 +386,9 @@ CMakeFiles/exampleB1.dir/src/PrimaryGenertor.cc.o: \
  /home/qiqi/Geant4/include/Geant4/G4ParticleTable.icc \
  /home/qiqi/Geant4/include/Geant4/G4SystemOfUnits.hh \
  /home/qiqi/Geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/RunAction.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/RunAction.hh \
  /home/qiqi/Geant4/include/Geant4/G4UserRunAction.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/SingleParticleSD.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/SingleParticleSD.hh \
  /home/qiqi/Geant4/include/Geant4/G4VSensitiveDetector.hh \
  /home/qiqi/Geant4/include/Geant4/G4CollectionNameVector.hh \
  /home/qiqi/Geant4/include/Geant4/G4Step.hh \

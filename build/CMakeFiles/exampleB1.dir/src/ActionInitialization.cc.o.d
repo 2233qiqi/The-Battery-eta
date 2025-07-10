@@ -1,9 +1,9 @@
 CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.o: \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/src/ActionInitialization.cc \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/src/ActionInitialization.cc \
  /usr/include/stdc-predef.h \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/ActionInitialization.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/ActionInitialization.hh \
  /home/qiqi/Geant4/include/Geant4/G4VUserActionInitialization.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/PrimaryGenerator.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/PrimaryGenerator.hh \
  /home/qiqi/Geant4/include/Geant4/G4Event.hh /usr/include/c++/14/set \
  /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
@@ -388,9 +388,9 @@ CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.o: \
  /home/qiqi/Geant4/include/Geant4/G4ParticleTable.icc \
  /home/qiqi/Geant4/include/Geant4/G4SystemOfUnits.hh \
  /home/qiqi/Geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/RunAction.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/RunAction.hh \
  /home/qiqi/Geant4/include/Geant4/G4UserRunAction.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/SingleParticleSD.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/SingleParticleSD.hh \
  /home/qiqi/Geant4/include/Geant4/G4VSensitiveDetector.hh \
  /home/qiqi/Geant4/include/Geant4/G4CollectionNameVector.hh \
  /home/qiqi/Geant4/include/Geant4/G4Step.hh \
@@ -431,11 +431,11 @@ CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.o: \
  /home/qiqi/Geant4/include/Geant4/G4VReadOutGeometry.hh \
  /home/qiqi/Geant4/include/Geant4/G4SensitiveVolumeList.hh \
  /home/qiqi/Geant4/include/Geant4/G4VSDFilter.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/EventAction.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/EventAction.hh \
  /home/qiqi/Geant4/include/Geant4/G4UserEventAction.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/SteppingAction.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/SteppingAction.hh \
  /home/qiqi/Geant4/include/Geant4/G4UserSteppingAction.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/DetectorConstruction.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/DetectorConstruction.hh \
  /home/qiqi/Geant4/include/Geant4/G4VUserDetectorConstruction.hh \
  /home/qiqi/Geant4/include/Geant4/G4LogicalVolume.hh \
  /home/qiqi/Geant4/include/Geant4/G4VPhysicalVolume.hh \

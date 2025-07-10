@@ -25,7 +25,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/cmake/ROOTConfig.cmake"
   "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/cmake/RootMacros.cmake"
   "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/cmake/modules/FindVdt.cmake"
-  "/home/qiqi/Vs Code/Geant_Project/Study-master/smcd_v1-main-main/The Battery eta/CMakeLists.txt"
+  "/home/qiqi/Vs Code/Geant_Project/Study-master/The Battery eta/CMakeLists.txt"
   "CMakeFiles/3.30.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.3/CMakeSystem.cmake"

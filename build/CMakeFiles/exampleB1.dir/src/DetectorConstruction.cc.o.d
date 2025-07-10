@@ -1,7 +1,7 @@
 CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.o: \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/src/DetectorConstruction.cc \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/src/DetectorConstruction.cc \
  /usr/include/stdc-predef.h \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/DetectorConstruction.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/DetectorConstruction.hh \
  /home/qiqi/Geant4/include/Geant4/G4VUserDetectorConstruction.hh \
  /home/qiqi/Geant4/include/Geant4/globals.hh \
  /home/qiqi/Geant4/include/Geant4/G4ios.hh \
@@ -399,9 +399,9 @@ CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.o: \
  /home/qiqi/Geant4/include/Geant4/G4VReadOutGeometry.hh \
  /home/qiqi/Geant4/include/Geant4/G4SensitiveVolumeList.hh \
  /home/qiqi/Geant4/include/Geant4/G4VSDFilter.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/SingleParticleSD.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/SingleParticleSD.hh \
  /home/qiqi/Geant4/include/Geant4/G4VSensitiveDetector.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/RadialEnergyDepositSD.hh \
- /home/qiqi/Vs\ Code/Geant_Project/Study-master/smcd_v1-main-main/The\ Battery\ eta/include/SingleParticleSD.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/RadialEnergyDepositSD.hh \
+ /home/qiqi/Vs\ Code/Geant_Project/Study-master/The\ Battery\ eta/include/SingleParticleSD.hh \
  /home/qiqi/Geant4/include/Geant4/G4Colour.hh \
  /home/qiqi/Geant4/include/Geant4/G4PVReplica.hh

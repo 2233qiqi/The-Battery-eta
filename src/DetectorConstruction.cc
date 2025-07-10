@@ -48,8 +48,8 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
     auto *solidWorld = new G4Box("SoildWorld", worldX, worldY, worldZ);
     G4LogicalVolume *logicWorld = new G4LogicalVolume(solidWorld, worldmat, "LogicWorld");
     G4VPhysicalVolume *physWorld = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicWorld, "PhysWorld", 0, false, 0, checkOverlaps);
-    G4VisAttributes *worldVisAtt = new G4VisAttributes(G4Colour(1.0, 1.0, 1.0, 0.1));
-    worldVisAtt->SetVisibility(true);
+    G4VisAttributes *worldVisAtt = new G4VisAttributes(G4Colour(0.0, 0.0, 0.0, 0.3));
+    worldVisAtt->SetVisibility(false);
     logicWorld->SetVisAttributes(worldVisAtt);
 
     // SIC不分层
@@ -58,7 +58,7 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
     G4LogicalVolume *logicSic = new G4LogicalVolume(solidSic, SiC, "LogicSic");
     G4VPhysicalVolume *physSic = new G4PVPlacement(0, G4ThreeVector(0. * um, 0. * um, 5.0 * um), logicSic, "PhysSic", logicWorld, false, 0, checkOverlaps);
 
-    G4VisAttributes *sicVisAtt = new G4VisAttributes(G4Colour(1.0, 0.0, 0.0, 0.7));
+    G4VisAttributes *sicVisAtt = new G4VisAttributes(G4Colour(0.3, 0.3, 0.3, 0.6));
     sicVisAtt->SetVisibility(true);
     logicSic->SetVisAttributes(sicVisAtt);
 
@@ -89,12 +89,12 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
     // Ni不分层
     G4int NumLayersNi63 = 20;
     G4double layerSpacing = 0.25 * um;
-    G4double Ni63X = 10 * um, Ni63Y = 10 * um, Ni63Z = 2.5 * um;
+    G4double Ni63X = 10 * um, Ni63Y = 10 * um, Ni63Z = 1.0 * um;
     G4double totalNi63Z = NumLayersNi63 * layerSpacing;
 
     auto *solidNi63 = new G4Box("SolidNi63", Ni63X, Ni63Y, Ni63Z);
     auto *logicalNi63 = new G4LogicalVolume(solidNi63, MixNi, "LogicNi63");
-    G4VPhysicalVolume *physNi63 = new G4PVPlacement(0, G4ThreeVector(0., 0., -2.5 * um), logicalNi63, "PhysNi63", logicWorld, false, 0, checkOverlaps);
+    G4VPhysicalVolume *physNi63 = new G4PVPlacement(0, G4ThreeVector(0., 0., -5.5 * um), logicalNi63, "PhysNi63", logicWorld, false, 0, checkOverlaps);
 
     auto *niVisAtt = new G4VisAttributes(G4Colour(1.0, 1.0, 0.0, 0.7));
     niVisAtt->SetVisibility(true);
