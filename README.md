@@ -1,2 +1,1 @@
-# smcd-v0
-A semiconductor simulation program
+赵陈文章//计算源效率的代码
