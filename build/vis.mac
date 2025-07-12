@@ -45,13 +45,16 @@
 # Initialize GPS
 
 /gps/particle e-
-/gps/pos/type Point
-
+/gps/pos/type Volume
+/gps/pos/shape Para 
 /gps/pos/centre 0 0 -2.5 um
+/gps/pos/halfx 10 um    
+/gps/pos/halfy 10 um    
+/gps/pos/halfz 2.5 um 
 
 
-/gps/direction 0 0 1  //定向Z轴发射
-#/gps/ang/type iso
+#/gps/direction 0 0 1  //定向Z轴发射
+/gps/ang/type iso
 /gps/ene/type Arb
 /gps/hist/type arb
 
