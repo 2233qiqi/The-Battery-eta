@@ -132,11 +132,11 @@ void SingleParticleSD::SaveToROOT()
 
     TCanvas canvas("canvas", "Depth-Dose Curve", 800, 600);
     graph->Draw("APL");
-    canvas.SaveAs("depth_dose_curve_unfiltered.png");
+    canvas.SaveAs("Engery and depth.png");
 
     file.Close();
     G4cout << "Successfully stored unfiltered depth-dose curve to " << fOutputFilename
-           << " and depth_dose_curve_unfiltered.png" << G4endl;
+           << " Engery and depth .png" << G4endl;
 }
 
 void SingleParticleSD::PrintResultsToTerminal()
