@@ -32,6 +32,6 @@ void PhysicsList::SetCuts()
 
     G4VUserPhysicsList::SetCuts();
 
-    defaultCutValue = 10 * nm;
+    defaultCutValue = 1 * nm;
     SetCutsWithDefault();
 }
