@@ -127,7 +127,7 @@ void SingleParticleSD::SaveToROOT()
     TGraph *graph = new TGraph(fNbins, x_depth.data(), y_total_edep.data());
 
     graph->SetName("TotalEnergyDepositVsDepth_Unfiltered");
-    graph->SetTitle("Engery and depth;Depth [um];Total Energy Deposited [keV]");
+    graph->SetTitle("5umNI-Engery and depth;Depth [um];Total Energy Deposited [keV]");
 
     graph->SetMarkerStyle(20);
     graph->SetMarkerColor(kBlue);

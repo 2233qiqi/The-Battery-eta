@@ -47,10 +47,10 @@
 /gps/particle e-
 /gps/pos/type Volume
 /gps/pos/shape Para
-/gps/pos/centre 0 0 -0.16 um
+/gps/pos/centre 0 0 -2.5 um
 /gps/pos/halfx 10 um
 /gps/pos/halfy 10 um
-/gps/pos/halfz 0.25 um
+/gps/pos/halfz 2.5 um
 
 
 
@@ -118,4 +118,4 @@
 
 /gps/number 1
 
-/run/beamOn 10000
+/run/beamOn 1000000
