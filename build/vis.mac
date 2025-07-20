@@ -55,6 +55,8 @@
 
 #/gps/ang/type  0 0 1  //定向Z轴发射
 /gps/ang/type iso
+
+
 /gps/ene/type Arb
 /gps/hist/type arb
 
@@ -114,4 +116,5 @@
 /gps/hist/inter Spline
 
 /gps/number 1
-/run/beamOn 10000
+
+/run/beamOn 1000000

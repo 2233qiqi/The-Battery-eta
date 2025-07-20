@@ -1,15 +1,16 @@
 #include "PhysicsList.hh"
 
-#include "G4EmStandardPhysics.hh"
 #include "G4DecayPhysics.hh"
+#include "G4SystemOfUnits.hh"
 #include "G4RadioactiveDecayPhysics.hh"
 #include "G4OpticalPhysics.hh" //光学
+#include "G4EmPenelopePhysics.hh"
 PhysicsList::PhysicsList() : G4VModularPhysicsList()
 {
     SetVerboseLevel(1);
 
     //  电磁物理 (必须)
-    RegisterPhysics(new G4EmStandardPhysics());
+    RegisterPhysics(new G4EmPenelopePhysics());
 
     //  通用衰变过程
     RegisterPhysics(new G4DecayPhysics());
@@ -30,4 +31,7 @@ void PhysicsList::SetCuts()
 {
 
     G4VUserPhysicsList::SetCuts();
+
+    defaultCutValue = 10 * nm;
+    SetCutsWithDefault();
 }

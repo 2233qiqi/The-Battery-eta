@@ -9,9 +9,9 @@
 #include "G4VisExecutive.hh"
 #include "G4NuclideTable.hh"
 
-#include "QGSP_BERT.hh"
 #include "DetectorConstruction.hh"
 #include "ActionInitialization.hh"
+#include "PhysicsList.hh"
 
 int main(int argc, char **argv)
 {
@@ -25,9 +25,8 @@ int main(int argc, char **argv)
   auto runManager = new G4RunManager;
 
   // physics process
-  auto physicsList = new QGSP_BERT();
 
-  runManager->SetUserInitialization(physicsList);
+  runManager->SetUserInitialization(new PhysicsList());
   // detector geometry
   runManager->SetUserInitialization(new DetectorConstruction());
   // primary generator
