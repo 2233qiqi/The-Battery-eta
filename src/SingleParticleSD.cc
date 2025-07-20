@@ -58,11 +58,16 @@ G4bool SingleParticleSD::ProcessHits(G4Step *step, G4TouchableHistory *)
     if (edep <= 0.0)
         return false;
 
-    G4double z = step->GetPreStepPoint()->GetPosition().z();
-    if (z < 0.0 || z >= fMaxDist)
+    auto touchable = step->GetPreStepPoint()->GetTouchable();
+
+    G4ThreeVector localPosition = touchable->GetHistory()->GetTopTransform().TransformPoint(step->GetPreStepPoint()->GetPosition());
+
+    G4double depth = localPosition.z() + fMaxDist / 2.0;
+
+    if (depth < 0.0 || depth >= fMaxDist)
         return false;
 
-    G4int bin_idx = static_cast<int>(z / fBinWidth);
+    G4int bin_idx = static_cast<int>(depth / fBinWidth);
     if (bin_idx >= 0 && bin_idx < fNbins)
     {
         fEventEdepSum[bin_idx] += edep;
