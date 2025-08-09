@@ -53,12 +53,12 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
     logicWorld->SetVisAttributes(worldVisAtt);
 
     // SIC不分层
-    G4double sicX = 10 * um, sicY = 10 * um, sicZ = 5 * um;
+    G4double sicX = 10 * um, sicY = 10 * um, sicZ = 10 * um;
     G4Box *solidSic = new G4Box("SolidSic", sicX, sicY, sicZ);
     G4LogicalVolume *logicSic = new G4LogicalVolume(solidSic, SiC, "LogicSic");
-    G4VPhysicalVolume *physSic = new G4PVPlacement(0, G4ThreeVector(0. * um, 0. * um, 5.0 * um), logicSic, "PhysSic", logicWorld, false, 0, checkOverlaps);
+    G4VPhysicalVolume *physSic = new G4PVPlacement(0, G4ThreeVector(0. * um, 0. * um, 10.0 * um), logicSic, "PhysSic", logicWorld, false, 0, checkOverlaps);
 
-    G4VisAttributes *sicVisAtt = new G4VisAttributes(G4Colour(0.0, 1.0, 0.0, 0.7));
+    G4VisAttributes *sicVisAtt = new G4VisAttributes(G4Colour(1.0, 1.0, 0.0, 0.7));
     sicVisAtt->SetVisibility(true);
     logicSic->SetVisAttributes(sicVisAtt);
 
@@ -89,12 +89,12 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
     // Ni不分层
     G4int NumLayersNi63 = 20;
     G4double layerSpacing = 0.25 * um;
-    G4double Ni63X = 10 * um, Ni63Y = 10 * um, Ni63Z = 2.5 * um;
+    G4double Ni63X = 10 * um, Ni63Y = 10 * um, Ni63Z = 0.25 * um;
     G4double totalNi63Z = NumLayersNi63 * layerSpacing;
 
     auto *solidNi63 = new G4Box("SolidNi63", Ni63X, Ni63Y, Ni63Z);
     auto *logicalNi63 = new G4LogicalVolume(solidNi63, MixNi, "LogicNi63");
-    G4VPhysicalVolume *physNi63 = new G4PVPlacement(0, G4ThreeVector(0., 0., -2.5 * um), logicalNi63, "PhysNi63", logicWorld, false, 0, checkOverlaps);
+    G4VPhysicalVolume *physNi63 = new G4PVPlacement(0, G4ThreeVector(0., 0., -0.25 * um), logicalNi63, "PhysNi63", logicWorld, false, 0, checkOverlaps);
 
     auto *niVisAtt = new G4VisAttributes(G4Colour(1.0, 0.0, 0.0, 0.7));
     niVisAtt->SetVisibility(true);
@@ -163,7 +163,7 @@ void DetectorConstruction::ConstructSDandField()
 
         auto *sicSd = new SingleParticleSD(SicSdName,
                                            200,
-                                           10. * um,
+                                           20.0 * um,
                                            "sic_escaped_particles.root");
 
         SdManager->AddNewDetector(sicSd);
