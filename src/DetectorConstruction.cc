@@ -45,7 +45,7 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
 
     // World
     G4double worldX = 100 * um, worldY = 100 * um, worldZ = 100 * um;
-    auto *solidWorld = new G4Box("SoildWorld", worldX, worldY, worldZ);
+    G4Box *solidWorld = new G4Box("SoildWorld", worldX, worldY, worldZ);
     G4LogicalVolume *logicWorld = new G4LogicalVolume(solidWorld, worldmat, "LogicWorld");
     G4VPhysicalVolume *physWorld = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicWorld, "PhysWorld", 0, false, 0, checkOverlaps);
     G4VisAttributes *worldVisAtt = new G4VisAttributes(G4Colour(0.0, 0.0, 0.0, 0.3));
@@ -61,6 +61,8 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
     G4VisAttributes *sicVisAtt = new G4VisAttributes(G4Colour(1.0, 1.0, 0.0, 0.7));
     sicVisAtt->SetVisibility(true);
     logicSic->SetVisAttributes(sicVisAtt);
+
+    logicSic->SetUserLimits(new G4UserLimits(1 * nm));
 
     /* // SIC分层
      G4double sicX = 10 * um, sicY = 10 * um, sic_full_Z = 10 * um;
@@ -100,6 +102,8 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
     niVisAtt->SetVisibility(true);
 
     logicalNi63->SetVisAttributes(niVisAtt);
+
+    logicalNi63->SetUserLimits(new G4UserLimits(1 * nm));
 
     fScoringVolume = logicalNi63;
 

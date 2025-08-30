@@ -9,6 +9,7 @@
 #include "G4NistManager.hh"
 #include "G4Material.hh"
 #include "G4Element.hh"
+#include "G4UserLimits.hh"
 
 #include "G4SystemOfUnits.hh"
 #include "G4UnitsTable.hh"
