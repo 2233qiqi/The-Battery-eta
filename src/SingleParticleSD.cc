@@ -9,8 +9,8 @@
 #include "TGraph.h"
 #include "TCanvas.h"
 #include <cmath>
-#include <iomanip>
 #include <vector>
+#include <mutex>
 
 SingleParticleSD::SingleParticleSD(const G4String &name, G4int nbins, G4double maxDist, const G4String &filename)
     : G4VSensitiveDetector(name),
@@ -27,9 +27,7 @@ SingleParticleSD::SingleParticleSD(const G4String &name, G4int nbins, G4double m
       fMeanEdep(nbins, 0.0),
       fStdError(nbins, 0.0)
 {
-    G4cout << ">>> [DEBUG] SD name: " << name << " constructed. "
-           << "MaxDist: " << fMaxDist / um << " um, "
-           << "BinWidth: " << fBinWidth / um << " um" << G4endl;
+    // 完全静默，不输出任何信息
 }
 
 SingleParticleSD::~SingleParticleSD()
@@ -37,8 +35,6 @@ SingleParticleSD::~SingleParticleSD()
     if (G4Threading::IsMasterThread())
     {
         CalculateStatistics();
-        PrintResultsToTerminal();
-        G4cout << "\n>>> Saving results to " << fOutputFilename << "..." << G4endl;
         SaveToROOT();
     }
 }
@@ -59,9 +55,7 @@ G4bool SingleParticleSD::ProcessHits(G4Step *step, G4TouchableHistory *)
         return false;
 
     auto touchable = step->GetPreStepPoint()->GetTouchable();
-
     G4ThreeVector localPosition = touchable->GetHistory()->GetTopTransform().TransformPoint(step->GetPreStepPoint()->GetPosition());
-
     G4double depth = localPosition.z() + fMaxDist / 2.0;
 
     if (depth < 0.0 || depth >= fMaxDist)
@@ -110,10 +104,7 @@ void SingleParticleSD::SaveToROOT()
 {
     TFile file(fOutputFilename.c_str(), "RECREATE");
     if (!file.IsOpen())
-    {
-        G4cerr << "错误: 无法打开ROOT文件 " << fOutputFilename << G4endl;
         return;
-    }
 
     std::vector<G4double> x_depth(fNbins);
     std::vector<G4double> y_total_edep(fNbins);
@@ -125,48 +116,16 @@ void SingleParticleSD::SaveToROOT()
     }
 
     TGraph *graph = new TGraph(fNbins, x_depth.data(), y_total_edep.data());
-
-    graph->SetName("TotalEnergyDepositVsDepth_Unfiltered");
-    graph->SetTitle("5umNI-Engery and depth;Depth [um];Total Energy Deposited [keV]");
-
+    graph->SetName("TotalEnergyDepositVsDepth");
+    graph->SetTitle("Depth vs Energy Deposited;Depth [um];Total Energy Deposited [keV]");
     graph->SetMarkerStyle(20);
     graph->SetMarkerColor(kBlue);
     graph->SetLineColor(kBlue);
-
     graph->Write();
 
     TCanvas canvas("canvas", "Depth-Dose Curve", 800, 600);
     graph->Draw("APL");
-    canvas.SaveAs("Engery and depth.png");
+    canvas.SaveAs("Energy_vs_Depth.png");
 
     file.Close();
-    G4cout << "Successfully stored unfiltered depth-dose curve to " << fOutputFilename
-           << " Engery and depth .png" << G4endl;
-}
-
-void SingleParticleSD::PrintResultsToTerminal()
-{
-    G4cout << "\n======================== FINAL RESULTS (Summary) ========================" << G4endl;
-    G4cout << "Total energy deposited across all events: " << fTotalEdepAllEvents / keV << " keV" << G4endl;
-    G4cout << "\nDetailed data per bin:" << G4endl;
-    G4cout << "------------------------------------------------------------------------" << G4endl;
-    G4cout << std::setw(5) << "Bin" << " |"
-           << std::setw(15) << "Depth (um)" << " |"
-           << std::setw(15) << "Mean Edep (keV)" << " |"
-           << std::setw(15) << "Std Error (keV)" << " |"
-           << std::setw(10) << "Hits" << G4endl;
-    G4cout << "------------------------------------------------------------------------" << G4endl;
-
-    for (G4int i = 0; i < fNbins; ++i)
-    {
-        if (fRunHitCounts[i] > 0)
-        {
-            G4cout << std::setw(5) << i << " |"
-                   << std::setw(15) << (i + 0.5) * fBinWidth / um << " |"
-                   << std::setw(15) << fMeanEdep[i] / keV << " |"
-                   << std::setw(15) << fStdError[i] / keV << " |"
-                   << std::setw(10) << fRunHitCounts[i] << G4endl;
-        }
-    }
-    G4cout << "------------------------------------------------------------------------" << G4endl;
 }
