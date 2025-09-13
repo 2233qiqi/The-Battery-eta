@@ -41,11 +41,11 @@ CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-14
+CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-15
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-14
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-15
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -67,11 +67,11 @@ CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-14
+CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-15
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-14
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-15
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -404,103 +404,103 @@ Qt5Widgets_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets
 Qt5_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5
 
 //Path to a library.
-ROOT_Core_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libCore.so
+ROOT_Core_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/lib/libCore.so
 
 //The directory containing a CMake configuration file for ROOT.
-ROOT_DIR:PATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/cmake
+ROOT_DIR:PATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/cmake
 
 //Path to a library.
-ROOT_Gpad_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libGpad.so
+ROOT_Gpad_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/lib/libGpad.so
 
 //Path to a library.
-ROOT_Graf3d_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libGraf3d.so
+ROOT_Graf3d_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/lib/libGraf3d.so
 
 //Path to a library.
-ROOT_Graf_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libGraf.so
+ROOT_Graf_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/lib/libGraf.so
 
 //Path to a library.
-ROOT_Hist_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libHist.so
+ROOT_Hist_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/lib/libHist.so
 
 //Path to a library.
-ROOT_Imt_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libImt.so
+ROOT_Imt_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/lib/libImt.so
 
 //Path to a library.
-ROOT_MathCore_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libMathCore.so
+ROOT_MathCore_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/lib/libMathCore.so
 
 //Path to a library.
-ROOT_Matrix_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libMatrix.so
+ROOT_Matrix_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/lib/libMatrix.so
 
 //Path to a library.
-ROOT_MultiProc_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libMultiProc.so
+ROOT_MultiProc_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/lib/libMultiProc.so
 
 //Path to a library.
-ROOT_Net_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libNet.so
+ROOT_Net_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/lib/libNet.so
 
 //Path to a library.
-ROOT_Physics_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libPhysics.so
+ROOT_Physics_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/lib/libPhysics.so
 
 //Path to a library.
-ROOT_Postscript_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libPostscript.so
+ROOT_Postscript_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/lib/libPostscript.so
 
 //Path to a library.
-ROOT_RIO_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libRIO.so
+ROOT_RIO_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/lib/libRIO.so
 
 //Path to a library.
-ROOT_ROOTDataFrame_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libROOTDataFrame.so
+ROOT_ROOTDataFrame_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/lib/libROOTDataFrame.so
 
 //Path to a library.
-ROOT_ROOTVecOps_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libROOTVecOps.so
+ROOT_ROOTVecOps_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/lib/libROOTVecOps.so
 
 //Path to a library.
-ROOT_Rint_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libRint.so
+ROOT_Rint_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/lib/libRint.so
 
 //Path to a library.
-ROOT_Thread_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libThread.so
+ROOT_Thread_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/lib/libThread.so
 
 //Path to a library.
-ROOT_TreePlayer_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libTreePlayer.so
+ROOT_TreePlayer_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/lib/libTreePlayer.so
 
 //Path to a library.
-ROOT_Tree_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libTree.so
+ROOT_Tree_LIBRARY:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/lib/libTree.so
 
 //Path to a program.
 ROOT_genmap_CMD:FILEPATH=ROOT_genmap_CMD-NOTFOUND
 
 //Path to a program.
-ROOT_genreflex_CMD:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/bin/genreflex
+ROOT_genreflex_CMD:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/bin/genreflex
 
 //Path to a program.
-ROOT_hadd_CMD:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/bin/hadd
+ROOT_hadd_CMD:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/bin/hadd
 
 //Path to a program.
-ROOT_root_CMD:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/bin/root
+ROOT_root_CMD:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/bin/root
 
 //Path to a program.
-ROOT_rootbrowse_CMD:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/bin/rootbrowse
+ROOT_rootbrowse_CMD:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/bin/rootbrowse
 
 //Path to a program.
-ROOT_rootcint_CMD:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/bin/rootcint
+ROOT_rootcint_CMD:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/bin/rootcint
 
 //Path to a program.
-ROOT_rootcling_CMD:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/bin/rootcling
+ROOT_rootcling_CMD:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/bin/rootcling
 
 //Path to a program.
-ROOT_rootcp_CMD:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/bin/rootcp
+ROOT_rootcp_CMD:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/bin/rootcp
 
 //Path to a program.
 ROOT_rootdraw_CMD:FILEPATH=ROOT_rootdraw_CMD-NOTFOUND
 
 //Path to a program.
-ROOT_rootls_CMD:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/bin/rootls
+ROOT_rootls_CMD:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/bin/rootls
 
 //Path to a program.
-ROOT_rootmkdir_CMD:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/bin/rootmkdir
+ROOT_rootmkdir_CMD:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/bin/rootmkdir
 
 //Path to a program.
-ROOT_rootmv_CMD:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/bin/rootmv
+ROOT_rootmv_CMD:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/bin/rootmv
 
 //Path to a program.
-ROOT_rootrm_CMD:FILEPATH=/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/bin/rootrm
+ROOT_rootrm_CMD:FILEPATH=/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/bin/rootrm
 
 //The directory containing a CMake configuration file for TBB.
 TBB_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/TBB
@@ -1162,7 +1162,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_MPI_C:INTERNAL=[/usr/lib/x86_64-linux-gnu/libmpi.so
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenGL.so][/usr/lib/x86_64-linux-gnu/libGLX.so][/usr/include][cfound components: OpenGL GLX ][v()]
 //Details about finding PNG
-FIND_PACKAGE_MESSAGE_DETAILS_PNG:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpng.so][/usr/include][v1.6.44()]
+FIND_PACKAGE_MESSAGE_DETAILS_PNG:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpng.so][/usr/include][v1.6.50()]
 //Details about finding TIFF
 FIND_PACKAGE_MESSAGE_DETAILS_TIFF:INTERNAL=[/usr/lib/x86_64-linux-gnu/libtiff.so][/usr/include/x86_64-linux-gnu][c ][v4.5.1()]
 //Details about finding Threads
@@ -1321,10 +1321,10 @@ PKG_FONTCONFIG_STATIC_CFLAGS:INTERNAL=-I/usr/include;-I/usr/include/freetype2;-I
 PKG_FONTCONFIG_STATIC_CFLAGS_I:INTERNAL=
 PKG_FONTCONFIG_STATIC_CFLAGS_OTHER:INTERNAL=-DXML_STATIC
 PKG_FONTCONFIG_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include;/usr/include/freetype2;/usr/include/libpng16
-PKG_FONTCONFIG_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lfontconfig;-lfreetype;-L/usr/lib/x86_64-linux-gnu;-L/usr/lib/x86_64-linux-gnu;-lz;-L/usr/lib;-lbz2;-lpng16;-lm;-lz;-lm;-L/usr/lib/x86_64-linux-gnu;-L/usr/lib/x86_64-linux-gnu;-lz;-lbrotlidec;-L/usr/lib/x86_64-linux-gnu;-lbrotlicommon;-L/usr/lib/x86_64-linux-gnu;-lexpat;-lm
+PKG_FONTCONFIG_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lfontconfig;-lfreetype;-L/usr/lib/x86_64-linux-gnu;-L/usr/lib/x86_64-linux-gnu;-lz;-L/usr/lib;-lbz2;-lpng16;-lz;-lm;-L/usr/lib/x86_64-linux-gnu;-L/usr/lib/x86_64-linux-gnu;-lz;-lbrotlidec;-L/usr/lib/x86_64-linux-gnu;-lbrotlicommon;-L/usr/lib/x86_64-linux-gnu;-lexpat;-lm
 PKG_FONTCONFIG_STATIC_LDFLAGS_OTHER:INTERNAL=
 PKG_FONTCONFIG_STATIC_LIBDIR:INTERNAL=
-PKG_FONTCONFIG_STATIC_LIBRARIES:INTERNAL=fontconfig;freetype;z;bz2;png16;m;z;m;z;brotlidec;brotlicommon;expat;m
+PKG_FONTCONFIG_STATIC_LIBRARIES:INTERNAL=fontconfig;freetype;z;bz2;png16;z;m;z;brotlidec;brotlicommon;expat;m
 PKG_FONTCONFIG_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu
 PKG_FONTCONFIG_STATIC_LIBS:INTERNAL=
 PKG_FONTCONFIG_STATIC_LIBS_L:INTERNAL=

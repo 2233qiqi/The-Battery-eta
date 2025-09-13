@@ -4,8 +4,9 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/include",
-                "/home/qiqi/Geant4/include/Geant4"
+                "/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root",
+                "/home/qiqi/Geant4/include/Geant4",
+                "/home/qiqi/Root/root_v6.36.04.Linux-ubuntu25.04-x86_64-gcc14.2/root/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
