@@ -555,8 +555,6 @@ WARNING: G4VisManager::EndOfRun: Automatic event keeping was suspended.
   "/vis/scene/endOfEventAction accumulate <N>", where N is the
   maximum number you wish to allow.  N < 0 means "unlimited".
  Changing export format to "jpg"
-WARNING: Viewpoint direction is very close to the up vector direction.
-  Change the up vector or "/vis/viewer/set/rotationStyle freeRotation".
 
 Graphics systems deleted.
 Visualization Manager deleting...

@@ -35,6 +35,7 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
     // SiC
     G4Element *elSi = new G4Element("Silicon", "Si", 14, 28.09 * g / mole);
     G4Element *elC = new G4Element("Carbon", "C", 6, 12.01 * g / mole);
+    
     G4Material *SiC = new G4Material("SiliconCarbide", 3.21 * g / cm3, 2);
     SiC->AddElement(elSi, 1);
     SiC->AddElement(elC, 1);
@@ -58,7 +59,7 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
     G4LogicalVolume *logicSic = new G4LogicalVolume(solidSic, SiC, "LogicSic");
     G4VPhysicalVolume *physSic = new G4PVPlacement(0, G4ThreeVector(0. * um, 0. * um, 10.0 * um), logicSic, "PhysSic", logicWorld, false, 0, checkOverlaps);
 
-    G4VisAttributes *sicVisAtt = new G4VisAttributes(G4Colour(1.0, 1.0, 0.0, 0.7));
+    G4VisAttributes *sicVisAtt = new G4VisAttributes(G4Colour(0.0, 1.0, 0.0, 0.7));
     sicVisAtt->SetVisibility(true);
     logicSic->SetVisAttributes(sicVisAtt);
 
