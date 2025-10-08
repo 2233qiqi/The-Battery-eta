@@ -56,7 +56,7 @@ int main(int argc, char **argv)
   else
   {
     // interactive mode
-    uiManager->ApplyCommand("/control/execute vis.mac");
+    uiManager->ApplyCommand("/control/execute run.mac");
     // if (ui->IsGUI()) {
     //   UImanager->ApplyCommand("/control/execute gui.mac");
     // }

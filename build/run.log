@@ -13,27 +13,6 @@ Checking overlaps for volume PhysSic:0 (G4Box) ... OK!
 Checking overlaps for volume PhysNi63:0 (G4Box) ... OK! 
 Constructing Sensitive Detector: Ni63_SelfAbsorption_SD
 Constructing Sensitive Detector: SiC_EscapedParticles_SD
-Visualization verbosity is now errors (2)
-Attributes available for modeling and filtering with
-  "/vis/modeling/trajectories/create/drawByAttribute" and
-  "/vis/filtering/trajectories/create/attributeFilter" commands:
-G4TrajectoriesModel:
-  Event ID (EventID): G4int
-  Run ID (RunID): G4int
-G4SmoothTrajectory:
-  Charge (Ch): unit: e+ (G4double)
-  Track ID (ID): G4int
-  Initial kinetic energy (IKE): G4BestUnit (G4double)
-  Initial momentum magnitude (IMag): G4BestUnit (G4double)
-  Initial momentum (IMom): G4BestUnit (G4ThreeVector)
-  No. of points (NTP): G4int
-  PDG Encoding (PDG): G4int
-  Parent ID (PID): G4int
-  Particle Name (PN): G4String
-G4SmoothTrajectoryPoint:
-  Auxiliary Point Position (Aux): G4BestUnit (G4ThreeVector)
-  Step Position (Pos): G4BestUnit (G4ThreeVector)
-Visualization verbosity is now warnings (3)
 =======================================================================
 ======                 Electromagnetic Physics Parameters      ========
 =======================================================================
@@ -540,23 +519,6 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
       ThetaMin(p) < Theta(degree) < 180, pLimit(GeV^1)= 0.139531
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
   eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
-WARNING: G4VisManager::EndOfEvent: Automatic event keeping suspended.
-
-  The number of events exceeds the maximum, 500, that may be kept by
-  the vis manager.
 SingleParticleSD is not found in /
-500 events have been kept for refreshing and/or reviewing.
-  "/vis/reviewKeptEvents" to review one by one.
-  To see accumulated, "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild".
-WARNING: G4VisManager::EndOfRun: Automatic event keeping was suspended.
-  The number of events in the run exceeded the maximum, 500, that may be
-  kept by the vis manager.
-  The number of events kept by the vis manager can be changed with
-  "/vis/scene/endOfEventAction accumulate <N>", where N is the
-  maximum number you wish to allow.  N < 0 means "unlimited".
- Changing export format to "jpg"
-
-Graphics systems deleted.
-Visualization Manager deleting...
 Total Energy Deposited:58.9469 Mev
 Total Energy Deposited:45.4564 Mev
