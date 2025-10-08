@@ -98,6 +98,9 @@ void SingleParticleSD::CalculateStatistics()
         }
         fTotalEdepAllEvents += fRunEdepSum[i];
     }
+   
+    G4cout<<std::setw(20)<<"Total Energy Deposited:"<<fTotalEdepAllEvents <<" Mev"<<G4endl;
+   
 }
 
 void SingleParticleSD::SaveToROOT()
