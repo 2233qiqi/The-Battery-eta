@@ -27,7 +27,7 @@ SingleParticleSD::SingleParticleSD(const G4String &name, G4int nbins, G4double m
       fMeanEdep(nbins, 0.0),
       fStdError(nbins, 0.0)
 {
-    // 完全静默，不输出任何信息
+  
 }
 
 SingleParticleSD::~SingleParticleSD()
