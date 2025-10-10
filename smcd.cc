@@ -49,20 +49,30 @@ int main(int argc, char **argv)
         <<"  and particle_type  "<<particle_type
         <<"  and particle_direction  "<<particle_direction
         <<std::endl;
-
-        G4String particleCmd = "/gps/particle " + particle_type;
-        uiManager->ApplyCommand(particleCmd);
-      
+  //设置粒子类别
+       G4String particleCmd = "/gps/particle " + particle_type;
+       uiManager->ApplyCommand(particleCmd);
+ //判断粒子方向
+       if (particle_direction == "iso")
+       {
+ 
+        uiManager->ApplyCommand("/gps/ang/type iso");
+   
+       }
+       else
+       {
         G4String directionCmd = "/gps/direction " + particle_direction;
         uiManager->ApplyCommand(directionCmd);
-
+    
+        uiManager->ApplyCommand("/gps/ang/type direction");
+       }
+    //运行对应的宏文件
         uiManager->ApplyCommand("/control/execute run_particle.mac"); 
 
          G4String beamCmd = "/run/beamOn " + std::to_string(particle_count);
             uiManager->ApplyCommand(beamCmd);
     }
 
-    
     else
     {
         std::cerr << "\nERROR: Incorrect number of arguments. Expected 3, got " << argc - 1 << ".\n";
