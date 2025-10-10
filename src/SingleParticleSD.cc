@@ -120,7 +120,7 @@ void SingleParticleSD::SaveToROOT()
 
     TGraph *graph = new TGraph(fNbins, x_depth.data(), y_total_edep.data());
     graph->SetName("TotalEnergyDepositVsDepth");
-    graph->SetTitle("Depth vs Energy Deposited;Depth [um];Total Energy Deposited [keV]");
+    graph->SetTitle("G(x);Depth [um];Total Energy Deposited [keV]");
     graph->SetMarkerStyle(20);
     graph->SetMarkerColor(kBlue);
     graph->SetLineColor(kBlue);

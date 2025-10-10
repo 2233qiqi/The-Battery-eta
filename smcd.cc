@@ -41,7 +41,7 @@ int main(int argc, char **argv)
    
     if(argc ==3)
     {
-      try{
+    
         int particle_count =std ::stoi(argv[1]);
         std::string particle_type = argv[2];
 
@@ -55,9 +55,7 @@ int main(int argc, char **argv)
 
          G4String beamCmd = "/run/beamOn " + std::to_string(particle_count);
             uiManager->ApplyCommand(beamCmd);
-        }catch (const std::invalid_argument& e) {
-            std::cerr << "ERROR: Invalid particle count. Usage: ./myprogram <N> <ParticleType>" << std::endl;
-        }
+        
     }
 
     else if (argc == 2)
@@ -72,7 +70,7 @@ int main(int argc, char **argv)
     }
     else
     {
-        uiManager->ApplyCommand("/control/execute run.mac");
+        uiManager->ApplyCommand("/control/execute run_paricle.mac");
         ui->SessionStart();
         delete ui;
     }
