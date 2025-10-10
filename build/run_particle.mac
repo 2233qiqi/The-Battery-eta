@@ -2,7 +2,7 @@
 
 /run/initialize
 
-/gps/particle e-
+#/gps/particle e-
 /gps/pos/type Volume
 /gps/pos/shape Para
 /gps/pos/centre 0 0 -0.25 um

@@ -519,5 +519,5 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
   eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
 SingleParticleSD is not found in /
-Total Energy Deposited:0.192315 Mev
-Total Energy Deposited:0.125059 Mev
+Total Energy Deposited:0.938413 Mev
+Total Energy Deposited:0.810339 Mev

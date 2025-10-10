@@ -38,8 +38,29 @@ int main(int argc, char **argv)
     visManager->Initialize();
 
     G4UImanager *uiManager = G4UImanager::GetUIpointer();
+   
+    if(argc ==3)
+    {
+      try{
+        int particle_count =std ::stoi(argv[1]);
+        std::string particle_type = argv[2];
 
-    if (argc == 2)
+        std::cout << "Running in batch mode with " << particle_count 
+        <<"  and particle_type  "<<particle_type<<std::endl;
+
+        G4String particleCmd = "/gps/particle " + particle_type;
+        uiManager->ApplyCommand(particleCmd);
+        
+        uiManager->ApplyCommand("/control/execute run_particle.mac"); 
+
+         G4String beamCmd = "/run/beamOn " + std::to_string(particle_count);
+            uiManager->ApplyCommand(beamCmd);
+        }catch (const std::invalid_argument& e) {
+            std::cerr << "ERROR: Invalid particle count. Usage: ./myprogram <N> <ParticleType>" << std::endl;
+        }
+    }
+
+    else if (argc == 2)
     {
         int particle_count = std::stoi(argv[1]);
         std::cout << "Running in batch mode with " << particle_count << " particles..." << std::endl;
