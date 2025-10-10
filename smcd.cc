@@ -49,10 +49,10 @@ int main(int argc, char **argv)
         <<"  and particle_type  "<<particle_type
         <<"  and particle_direction  "<<particle_direction
         <<std::endl;
-  //设置粒子类别
+     //设置粒子类别
        G4String particleCmd = "/gps/particle " + particle_type;
        uiManager->ApplyCommand(particleCmd);
- //判断粒子方向
+     //判断粒子方向
        if (particle_direction == "iso")
        {
  
@@ -66,7 +66,7 @@ int main(int argc, char **argv)
     
         uiManager->ApplyCommand("/gps/ang/type direction");
        }
-    //运行对应的宏文件
+     //运行对应的宏文件
         uiManager->ApplyCommand("/control/execute run_particle.mac"); 
 
          G4String beamCmd = "/run/beamOn " + std::to_string(particle_count);
