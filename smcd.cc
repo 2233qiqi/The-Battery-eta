@@ -44,7 +44,7 @@ int main(int argc, char **argv)
         int particle_count = std::stoi(argv[1]);
         std::cout << "Running in batch mode with " << particle_count << " particles..." << std::endl;
 
-        uiManager->ApplyCommand("/control/execute run.mac");
+        uiManager->ApplyCommand("/control/execute run_particle.mac");
 
         G4String beamCmd = "/run/beamOn " + std::to_string(particle_count);
         uiManager->ApplyCommand(beamCmd);
