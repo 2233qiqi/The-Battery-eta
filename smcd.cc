@@ -39,40 +39,36 @@ int main(int argc, char **argv)
 
     G4UImanager *uiManager = G4UImanager::GetUIpointer();
    
-    if(argc ==3)
+    if(argc == 4)
     {
-    
-        int particle_count =std ::stoi(argv[1]);
+        int particle_count=std::stoi(argv[1]);
         std::string particle_type = argv[2];
-
+        std::string particle_direction = argv[3];
+        
         std::cout << "Running in batch mode with " << particle_count 
-        <<"  and particle_type  "<<particle_type<<std::endl;
+        <<"  and particle_type  "<<particle_type
+        <<"  and particle_direction  "<<particle_direction
+        <<std::endl;
 
         G4String particleCmd = "/gps/particle " + particle_type;
         uiManager->ApplyCommand(particleCmd);
-        
+      
+        G4String directionCmd = "/gps/direction " + particle_direction;
+        uiManager->ApplyCommand(directionCmd);
+
         uiManager->ApplyCommand("/control/execute run_particle.mac"); 
 
          G4String beamCmd = "/run/beamOn " + std::to_string(particle_count);
             uiManager->ApplyCommand(beamCmd);
-        
     }
 
-    else if (argc == 2)
-    {
-        int particle_count = std::stoi(argv[1]);
-        std::cout << "Running in batch mode with " << particle_count << " particles..." << std::endl;
-
-        uiManager->ApplyCommand("/control/execute run_particle.mac");
-
-        G4String beamCmd = "/run/beamOn " + std::to_string(particle_count);
-        uiManager->ApplyCommand(beamCmd);
-    }
+    
     else
     {
-        uiManager->ApplyCommand("/control/execute run_paricle.mac");
-        ui->SessionStart();
-        delete ui;
+        std::cerr << "\nERROR: Incorrect number of arguments. Expected 3, got " << argc - 1 << ".\n";
+        std::cerr << "Usage: ./exampleB1  <N_events> <ParticleType> \"<Dir X Y Z>\"\n";
+        std::cerr << "Example: ./exampleB1 10000 gamma \"0 0 1\"\n" << std::endl;
+        
     }
 
     delete visManager;
