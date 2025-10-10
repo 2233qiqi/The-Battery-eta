@@ -77,7 +77,3 @@
 
 /gps/number 1
 
-/control/alias particle_count 10000
-
-
-/run/beamOn {particle_count}

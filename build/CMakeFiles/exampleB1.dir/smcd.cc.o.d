@@ -148,7 +148,11 @@ CMakeFiles/exampleB1.dir/smcd.cc.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc \
+ /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/fstream \
+ /usr/include/c++/13/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
+ /usr/include/c++/13/bits/fstream.tcc \
  /usr/local/include/Geant4/G4RunManager.hh \
  /usr/local/include/Geant4/G4Event.hh /usr/include/c++/13/set \
  /usr/include/c++/13/bits/stl_tree.h \
@@ -212,8 +216,7 @@ CMakeFiles/exampleB1.dir/smcd.cc.o: \
  /usr/include/c++/13/bits/locale_facets_nonio.h /usr/include/c++/13/ctime \
  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/13/bits/codecvt.h \
- /usr/include/c++/13/bits/locale_facets_nonio.tcc \
+ /usr/include/libintl.h /usr/include/c++/13/bits/locale_facets_nonio.tcc \
  /usr/include/c++/13/bits/locale_conv.h \
  /usr/include/c++/13/bits/quoted_string.h /usr/include/c++/13/mutex \
  /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
@@ -347,10 +350,7 @@ CMakeFiles/exampleB1.dir/smcd.cc.o: \
  /usr/local/include/Geant4/G4MaterialPropertiesIndex.hh \
  /usr/local/include/Geant4/G4MaterialPropertyVector.hh \
  /usr/local/include/Geant4/G4PhysicsFreeVector.hh \
- /usr/local/include/Geant4/G4PhysicsVector.hh /usr/include/c++/13/fstream \
- /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc \
+ /usr/local/include/Geant4/G4PhysicsVector.hh \
  /usr/local/include/Geant4/G4PhysicsVectorType.hh \
  /usr/local/include/Geant4/G4PhysicsVector.icc \
  /usr/local/include/Geant4/G4MaterialTable.hh \
@@ -475,16 +475,12 @@ CMakeFiles/exampleB1.dir/smcd.cc.o: \
  /usr/local/include/Geant4/G4RunManagerKernel.hh \
  /usr/local/include/Geant4/rundefs.hh /usr/include/c++/13/list \
  /usr/include/c++/13/bits/stl_list.h /usr/include/c++/13/bits/list.tcc \
- /usr/local/include/Geant4/G4MTRunManager.hh \
- /usr/local/include/Geant4/G4MTBarrier.hh \
- /usr/local/include/Geant4/G4RNGHelper.hh /usr/include/c++/13/queue \
- /usr/include/c++/13/deque /usr/include/c++/13/bits/stl_deque.h \
- /usr/include/c++/13/bits/deque.tcc /usr/include/c++/13/bits/stl_queue.h \
- /usr/local/include/Geant4/G4RunManager.hh \
  /usr/local/include/Geant4/G4UImanager.hh \
  /usr/local/include/Geant4/G4UIcommandStatus.hh \
  /usr/local/include/Geant4/G4VStateDependent.hh \
  /usr/local/include/Geant4/icomsdefs.hh \
+ /usr/local/include/Geant4/G4UIExecutive.hh \
+ /usr/local/include/Geant4/G4VUIshell.hh \
  /usr/local/include/Geant4/G4VisManager.hh \
  /usr/local/include/Geant4/G4VVisManager.hh \
  /usr/local/include/Geant4/G4GraphicsSystemList.hh \
@@ -575,8 +571,6 @@ CMakeFiles/exampleB1.dir/smcd.cc.o: \
  /usr/local/include/Geant4/G4Scene.icc \
  /usr/local/include/Geant4/G4TrajectoriesModel.hh \
  /usr/local/include/Geant4/G4VisManager.icc \
- /usr/local/include/Geant4/G4UIExecutive.hh \
- /usr/local/include/Geant4/G4VUIshell.hh \
  /usr/local/include/Geant4/G4VisExecutive.hh \
  /usr/local/include/Geant4/G4VisManager.hh \
  /usr/local/include/Geant4/G4VisExecutive.icc \
