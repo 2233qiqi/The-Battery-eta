@@ -39,13 +39,17 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     G4double World_Z = 10*cm;
 
     G4Box* SolidWolrd  = new G4Box("World",World_X/2,World_Y/2,World_Z/2);
-    G4LogicalVolume* G4LogicalWorld = new G4LogicalVolume(SolidWolrd,WorldMat,"LogicalWorld");
-    G4VPhysicalVolume*G4VPhysicalVolume = new G4PVPlacement(0,G4ThreeVector(0,0,0),"PhysicalWorld",G4LogicalWorld,NULL,false,0,true);
+    G4LogicalVolume* LogicalWorld = new G4LogicalVolume(SolidWolrd,WorldMat,"LogicalWorld");
+    G4VPhysicalVolume*G4VPhysicalVolume = new G4PVPlacement(0,G4ThreeVector(0,0,0),"PhysicalWorld",LogicalWorld,NULL,false,0,true);
 
     //Ni
     G4double Ni_X = 1*cm;
     G4double Ni_Y = 1*cm;
     G4double Ni_Z = 0.143*um;
+
+    G4Box* SolidNi = new G4Box ("Ni",Ni_X/2,Ni_Y/2,Ni_Z/2);
+    G4LogicalVolume* LogicalNi = new G4LogicalVolume (SolidNi,NiMat,"LogivalNi");
+    G4V
 
 
 
