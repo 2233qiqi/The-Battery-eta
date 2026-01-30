@@ -1,3 +1,5 @@
+#ifndef DetectorConstruction_h
+#define DetectorConstruction_h 1
 #include "G4VUserDetectorConstruction.hh"
 #include "globals.hh"
 
@@ -18,5 +20,7 @@ class DetectorConstruction : public G4VUserDetectorConstruction
     void DefineMaterials();
     G4LogicalVolume* fLogicGeCrystal; 
 };
+
+#endif
 
 
