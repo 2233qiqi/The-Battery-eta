@@ -3,10 +3,13 @@
 # Initialize GPS
 /gps/pos/type Volume
 /gps/pos/shape Para
+/gps/particle e-
+
 
 /gps/pos/halfx 0.5 cm
 /gps/pos/halfy 0.5 cm
 /gps/pos/halfz 71.5 nm
+/gps/pos/volume LogicalNi
 
 /gps/pos/centre 0 0 0 cm
 
