@@ -12,3 +12,15 @@ RunAction :: RunAction()
     analysisManager ->SetDefaultFileType("root");
     analysisManager ->CreateH2("EnergyDeposition","Depth",300,0,300*um,100,0,10*MeV);
 };
+
+RunAction :: ~RunAction()
+{
+
+};
+
+void RunAction :: BeginOfRunAction(const G4Run*)
+{
+    G4AnalysisManager* analysisManager = G4AnalysisManager :: Instance();
+    analysisManager ->OpenFile();
+
+}
