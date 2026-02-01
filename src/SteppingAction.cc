@@ -23,7 +23,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 {  
   G4LogicalVolume* volume = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume()->GetLogicalVolume();
 
-    if (volume->GetName() == "GeActive_LV") {
+    if (volume->GetName() == "LogicalSic") {
         G4double edep = step->GetTotalEnergyDeposit();
 
         if (edep > 0.) {
