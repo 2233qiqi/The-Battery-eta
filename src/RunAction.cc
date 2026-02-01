@@ -10,7 +10,7 @@ RunAction :: RunAction()
    
     analysisManager ->SetFileName("DespositionData");
     analysisManager ->SetDefaultFileType("root");
-    analysisManager ->CreateH2("EnergyDeposition","Depth",300,0,300*um,100,0,10*MeV);
+    analysisManager ->CreateH1(0,"Energy desposition in Sic",0,100*keV,100*MeV);
 };
 
 RunAction :: ~RunAction()
