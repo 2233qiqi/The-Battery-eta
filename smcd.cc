@@ -66,7 +66,7 @@ int main(int argc, char **argv)
         uiManager->ApplyCommand("/gps/ang/type direction");
        }
      //运行对应的宏文件
-        uiManager->ApplyCommand("/control/execute run_particle.mac"); 
+        uiManager->ApplyCommand("/control/execute run.mac"); 
 
          G4String beamCmd = "/run/beamOn " + std::to_string(particle_count);
             uiManager->ApplyCommand(beamCmd);
