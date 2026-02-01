@@ -6,6 +6,7 @@
 #include "G4PVPlacement.hh"
 #include "G4SystemOfUnits.hh"
 #include "DetectorConstruction.hh"
+#include "G4VisAttributes.hh"
 
 DetectorConstruction :: DetectorConstruction() :G4VUserDetectorConstruction()
 {
@@ -59,21 +60,33 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     G4Box *SolidSic = new G4Box ("Sic",Sic_X/2,Sic_Y/2,Sic_Z/2);
     G4LogicalVolume* LogiclaVolumeSic = new G4LogicalVolume(SolidSic,Sic,"LogicalSic");
     G4VPhysicalVolume *PhysicalSic = new G4PVPlacement (0,G4ThreeVector(0,0,(Ni_Z/2+Sic_Z/2)),"PhySicalSic",LogiclaVolumeSic,PhysicalWorld,false,0,true);
+
+    //可视化
+    G4VisAttributes* Ni_VisAtt = new G4VisAttributes(G4Color(0.5,0.5,0.5,0.7));
+    Ni_VisAtt ->SetForceSolid(true);
+    LogicalNi ->SetVisAttributes(Ni_VisAtt);
+    G4VisAttributes* Sic_VisAtt = new G4VisAttributes(G4Color(0.0,1.0,0.0,0.7));
+    Sic_VisAtt ->SetForceSolid(true);
+    LogiclaVolumeSic ->SetVisAttributes(Sic_VisAtt);
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    return PhysicalWorld;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
