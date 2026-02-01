@@ -56,7 +56,12 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     G4double Sic_Y = 1*cm;
     G4double Sic_Z = 310.3*um;
 
+    G4Box *SolidSic = new G4Box ("Sic",Sic_X/2,Sic_Y/2,Sic_Z/2);
+    G4LogicalVolume* LogiclaVolumeSic = new G4LogicalVolume(SolidSic,Sic,"LogicalSic");
+    G4VPhysicalVolume *PhysicalSic = new G4PVPlacement (0,G4ThreeVector(0,0,(Ni_Z/2+Sic_Z/2)),"PhySicalSic",LogiclaVolumeSic,PhysicalWorld,false,0,true);
     
+
+
 
 
 
