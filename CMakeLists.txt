@@ -40,17 +40,17 @@ file(GLOB headers ${PROJECT_SOURCE_DIR}/include/*.hh)
 #----------------------------------------------------------------------------
 # Add the executable, use our local headers, and link it to the Geant4 libraries
 #
-add_executable(exampleB1 smcd.cc ${sources} ${headers})
+add_executable(main main.cc ${sources} ${headers})
 
 #----------------------------------------------------------------------------
-target_include_directories(exampleB1 PRIVATE
+target_include_directories(main PRIVATE
     include
     ${Geant4_INCLUDE_DIRS}
     ${ROOT_INCLUDE_DIRS}
 )
 
 #----------------------------------------------------------------------------
-target_link_libraries(exampleB1 PRIVATE
+target_link_libraries(main PRIVATE
     ${ROOT_LIBRARIES}
     ${Geant4_LIBRARIES}
     ${TBB_LIB}
@@ -61,16 +61,16 @@ target_link_libraries(exampleB1 PRIVATE
 # build B1. This is so that we can run the executable directly because it
 # relies on these scripts being in the current working directory.
 #
-#set(EXAMPLEB1_SCRIPTS
-# exampleB1.in
-# exampleB1.out
+#set(MAIN_SCRIPTS
+# main.in
+# main.out
 # init_vis.mac
 #  run1.mac
 #run2.mac
 # vis.mac
 # )
 
-foreach(_script ${EXAMPLEB1_SCRIPTS})
+foreach(_script ${MAIN_SCRIPTS})
   configure_file(
     ${PROJECT_SOURCE_DIR}/${_script}
     ${PROJECT_BINARY_DIR}/${_script}
