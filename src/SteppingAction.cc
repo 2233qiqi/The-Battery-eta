@@ -8,6 +8,8 @@
 #include "RunAction.hh"
 #include "G4RunManager.hh"
 #include "G4LogicalVolume.hh"
+#include "G4AnalysisManager.hh"
+
 
 SteppingAction::SteppingAction(EventAction* eventAction):G4UserSteppingAction(), fEventAction(eventAction), fScoringVolume(NULL)
 {
