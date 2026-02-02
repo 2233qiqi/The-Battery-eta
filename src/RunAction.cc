@@ -17,7 +17,7 @@ RunAction :: ~RunAction()
 {
 
 };
-
+ 
 void RunAction :: BeginOfRunAction(const G4Run*)
 {
     G4AnalysisManager* analysisManager = G4AnalysisManager :: Instance();
