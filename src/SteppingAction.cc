@@ -35,9 +35,9 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
     }
 
     G4double z = step->GetPreStepPoint()->GetPosition().z();
-    auto det = static_cast<const DetectorConstruction*>(
-    G4RunManager::GetRunManager()->GetUserDetectorConstruction());
-    G4double z0 =det->NiThnickness() / 2;
+    //auto det = static_cast<const DetectorConstruction*>(
+    //G4RunManager::GetRunManager()->GetUserDetectorConstruction());
+    G4double z0 =(0.143/ 2)*um;
     G4double z1 = z - z0;
 
     if (z1 < 0 || z1 > 310.3*um)
