@@ -9,7 +9,6 @@
 /gps/pos/halfx 0.5 cm
 /gps/pos/halfy 0.5 cm
 /gps/pos/halfz 71.5 nm
-/gps/pos/volume LogicalNi
 
 /gps/pos/centre 0 0 0 cm
 
@@ -89,5 +88,5 @@
 
 /gps/hist/inter Spline
 
-/gps/number 1000
-/run/beamOn 10
+/gps/number 10000
+/run/beamOn 1
