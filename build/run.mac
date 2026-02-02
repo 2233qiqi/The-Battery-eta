@@ -88,5 +88,5 @@
 
 /gps/hist/inter Spline
 
-/gps/number 10000
+/gps/number 1000000
 /run/beamOn 1
