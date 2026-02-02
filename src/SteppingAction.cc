@@ -45,5 +45,6 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 
     auto analysisManager = G4AnalysisManager::Instance();
     analysisManager->FillH1(0, z1, edep);
+    analysisManager->FillH1(1,z1);
 }
 
