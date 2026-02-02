@@ -1,0 +1,3 @@
+/home/qiqi/geant4/The-Battery-eta/build/CMakeFiles/main.dir
+/home/qiqi/geant4/The-Battery-eta/build/CMakeFiles/edit_cache.dir
+/home/qiqi/geant4/The-Battery-eta/build/CMakeFiles/rebuild_cache.dir
