@@ -16,12 +16,18 @@ EventAction::~EventAction()
 void EventAction :: BeginOfEventAction (const G4Event *event)
 {
     fTotalEdep =0;
+    fEnteredSiC = false;
 }
 
 void EventAction::AddEdep(G4double edep)
 {
     fTotalEdep += edep;
     
+}
+
+void EventAction::EnteredSiC()
+{
+    fEnteredSiC = true;
 }
 
 void EventAction :: EndOfEventAction(const G4Event *event)
@@ -31,6 +37,11 @@ void EventAction :: EndOfEventAction(const G4Event *event)
            auto analysisManager = G4AnalysisManager::Instance();
            analysisManager->FillH1(0, fTotalEdep);
         }
+    if (fEnteredSiC) 
+    {
+        auto analysisManager = G4AnalysisManager::Instance();
+        analysisManager->FillH1(2, 1);  
+    }
     
     G4cout << "Total energy deposition in SiC: "
            << fTotalEdep / keV << " keV" << G4endl;

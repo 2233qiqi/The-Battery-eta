@@ -35,7 +35,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
     }
 
     G4double z = step->GetPreStepPoint()->GetPosition().z();
-    G4double z0 =(1.5/ 2)*um;
+    G4double z0 =(0.5/ 2)*um;
     G4double z1 = z - z0;
 
     if (z1 < 0 || z1 > 310.3*um)

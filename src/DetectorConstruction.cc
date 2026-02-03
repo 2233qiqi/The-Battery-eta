@@ -48,7 +48,7 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     //Ni
     G4double Ni_X = 1*cm;
     G4double Ni_Y = 1*cm;
-    G4double Ni_Z = 1.5*um;
+    G4double Ni_Z = 0.5*um;
 
     G4Box* SolidNi = new G4Box ("Ni",Ni_X/2,Ni_Y/2,Ni_Z/2);
     G4LogicalVolume* LogicalNi = new G4LogicalVolume (SolidNi,NiMat,"LogicalNi");
