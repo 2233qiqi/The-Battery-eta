@@ -3,6 +3,8 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: \
  /usr/include/stdc-predef.h \
  /home/qiqi/geant4/The-Battery-eta/include/SteppingAction.hh \
  /usr/local/include/Geant4/G4UserSteppingAction.hh \
+ /home/qiqi/geant4/The-Battery-eta/include/EventAction.hh \
+ /usr/local/include/Geant4/G4UserEventAction.hh \
  /usr/local/include/Geant4/globals.hh /usr/local/include/Geant4/G4ios.hh \
  /usr/local/include/Geant4/G4Types.hh \
  /usr/local/include/Geant4/G4GlobalConfig.hh /usr/include/c++/13/complex \
@@ -223,20 +225,7 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: \
  /usr/include/c++/13/bits/parse_numbers.h \
  /usr/include/c++/13/bits/std_mutex.h \
  /usr/include/c++/13/bits/unique_lock.h \
- /home/qiqi/geant4/The-Battery-eta/include/DetectorConstruction.hh \
- /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
- /usr/local/include/Geant4/globals.hh /usr/include/c++/13/vector \
- /usr/include/c++/13/bits/stl_uninitialized.h \
- /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc \
- /home/qiqi/geant4/The-Battery-eta/include/EventAction.hh \
- /usr/local/include/Geant4/G4UserEventAction.hh \
- /usr/local/include/Geant4/G4SystemOfUnits.hh \
- /usr/local/include/Geant4/CLHEP/Units/SystemOfUnits.h \
- /home/qiqi/geant4/The-Battery-eta/include/RunAction.hh \
- /usr/local/include/Geant4/G4UserRunAction.hh \
- /usr/local/include/Geant4/G4Run.hh /usr/local/include/Geant4/G4Step.hh \
+ /usr/local/include/Geant4/G4Step.hh /usr/local/include/Geant4/globals.hh \
  /usr/local/include/Geant4/G4ThreeVector.hh \
  /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.h \
  /usr/local/include/Geant4/CLHEP/Utility/defs.h \
@@ -254,6 +243,7 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: \
  /usr/local/include/Geant4/CLHEP/Vector/RotationX.h \
  /usr/local/include/Geant4/CLHEP/Vector/RotationX.icc \
  /usr/local/include/Geant4/CLHEP/Units/PhysicalConstants.h \
+ /usr/local/include/Geant4/CLHEP/Units/SystemOfUnits.h \
  /usr/local/include/Geant4/CLHEP/Vector/RotationY.h \
  /usr/local/include/Geant4/CLHEP/Vector/RotationY.icc \
  /usr/local/include/Geant4/CLHEP/Vector/RotationZ.h \
@@ -274,7 +264,11 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: \
  /usr/include/c++/13/bits/atomic_futex.h /usr/include/c++/13/atomic \
  /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/bits/std_thread.h /usr/include/c++/13/thread \
- /usr/include/c++/13/bits/this_thread_sleep.h \
+ /usr/include/c++/13/bits/this_thread_sleep.h /usr/include/c++/13/vector \
+ /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc \
  /usr/local/include/Geant4/G4VPhysicalVolume.icc \
  /usr/local/include/Geant4/G4StepPoint.hh \
  /usr/local/include/Geant4/G4Allocator.hh \
@@ -353,147 +347,17 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: \
  /usr/local/include/Geant4/G4VUserTrackInformation.hh \
  /usr/local/include/Geant4/G4PhysicsModelCatalog.hh \
  /usr/local/include/Geant4/G4Track.icc \
- /usr/local/include/Geant4/G4Step.hh /usr/local/include/Geant4/G4Event.hh \
- /usr/include/c++/13/set /usr/include/c++/13/bits/stl_set.h \
- /usr/include/c++/13/bits/stl_multiset.h \
- /usr/local/include/Geant4/evtdefs.hh \
- /usr/local/include/Geant4/G4PrimaryVertex.hh \
- /usr/local/include/Geant4/G4PrimaryParticle.hh \
- /usr/local/include/Geant4/G4HCofThisEvent.hh \
- /usr/local/include/Geant4/G4VHitsCollection.hh \
- /usr/local/include/Geant4/G4DCofThisEvent.hh \
- /usr/local/include/Geant4/G4VDigiCollection.hh \
- /usr/local/include/Geant4/G4TrajectoryContainer.hh \
- /usr/local/include/Geant4/G4VTrajectory.hh \
- /usr/local/include/Geant4/G4VUserEventInformation.hh \
- /usr/local/include/Geant4/G4RunManager.hh \
- /usr/local/include/Geant4/G4Event.hh \
- /usr/local/include/Geant4/G4EventManager.hh \
- /usr/local/include/Geant4/G4StackManager.hh \
- /usr/local/include/Geant4/G4UserStackingAction.hh \
- /usr/local/include/Geant4/G4ClassificationOfNewTrack.hh \
- /usr/local/include/Geant4/G4StackedTrack.hh \
- /usr/local/include/Geant4/G4TrackStack.hh \
- /usr/local/include/Geant4/G4SmartTrackStack.hh /usr/include/c++/13/array \
- /usr/include/c++/13/compare \
- /usr/local/include/Geant4/G4SubEventTrackStack.hh \
- /usr/local/include/Geant4/G4SubEvent.hh \
- /usr/local/include/Geant4/G4PrimaryTransformer.hh \
- /usr/local/include/Geant4/G4ParticleTable.hh \
- /usr/local/include/Geant4/G4ParticleTableIterator.hh \
- /usr/local/include/Geant4/G4ParticleTable.icc \
- /usr/local/include/Geant4/G4TrackingManager.hh \
- /usr/local/include/Geant4/G4SteppingManager.hh \
- /usr/local/include/Geant4/G4Navigator.hh \
- /usr/local/include/Geant4/G4NormalNavigation.hh \
- /usr/local/include/Geant4/G4VNavigation.hh \
- /usr/local/include/Geant4/G4VSolid.hh \
- /usr/local/include/Geant4/G4VSolid.icc \
- /usr/local/include/Geant4/G4AuxiliaryNavServices.hh \
- /usr/local/include/Geant4/G4AuxiliaryNavServices.icc \
- /usr/local/include/Geant4/G4NormalNavigation.icc \
- /usr/local/include/Geant4/G4VoxelNavigation.hh \
- /usr/local/include/Geant4/G4NavigationLogger.hh \
- /usr/local/include/Geant4/G4BlockingList.hh \
- /usr/local/include/Geant4/G4BlockingList.icc \
- /usr/local/include/Geant4/G4SmartVoxelProxy.hh \
- /usr/local/include/Geant4/G4SmartVoxelProxy.icc \
- /usr/local/include/Geant4/G4SmartVoxelNode.hh \
- /usr/local/include/Geant4/G4SmartVoxelNode.icc \
- /usr/local/include/Geant4/G4SmartVoxelHeader.hh \
- /usr/local/include/Geant4/G4SmartVoxelHeader.icc \
- /usr/local/include/Geant4/G4VoxelNavigation.icc \
- /usr/local/include/Geant4/G4ParameterisedNavigation.hh \
- /usr/local/include/Geant4/G4VPVParameterisation.hh \
- /usr/local/include/Geant4/G4VVolumeMaterialScanner.hh \
- /usr/local/include/Geant4/G4ParameterisedNavigation.icc \
- /usr/local/include/Geant4/G4ReplicaNavigation.hh \
- /usr/local/include/Geant4/G4ReplicaNavigation.icc \
- /usr/local/include/Geant4/G4RegularNavigation.hh \
- /usr/local/include/Geant4/G4VExternalNavigation.hh \
- /usr/local/include/Geant4/G4Navigator.icc \
- /usr/local/include/Geant4/G4NoProcess.hh \
- /usr/local/include/Geant4/G4VProcess.hh \
- /usr/local/include/Geant4/Randomize.hh \
- /usr/local/include/Geant4/CLHEP/Random/Randomize.h \
- /usr/local/include/Geant4/CLHEP/Random/DualRand.h \
- /usr/local/include/Geant4/CLHEP/Random/RandomEngine.h \
- /usr/local/include/Geant4/CLHEP/Random/RandomEngine.icc \
- /usr/local/include/Geant4/CLHEP/Random/JamesRandom.h \
- /usr/local/include/Geant4/CLHEP/Random/MixMaxRng.h \
- /usr/local/include/Geant4/CLHEP/Random/MTwistEngine.h \
- /usr/local/include/Geant4/CLHEP/Random/RanecuEngine.h \
- /usr/local/include/Geant4/CLHEP/Random/RanluxEngine.h \
- /usr/local/include/Geant4/CLHEP/Random/Ranlux64Engine.h \
- /usr/local/include/Geant4/CLHEP/Random/RanluxppEngine.h \
- /usr/local/include/Geant4/CLHEP/Random/RanshiEngine.h \
- /usr/local/include/Geant4/CLHEP/Random/RandBinomial.h \
- /usr/local/include/Geant4/CLHEP/Random/Random.h \
- /usr/local/include/Geant4/CLHEP/Random/Random.icc \
- /usr/local/include/Geant4/CLHEP/Utility/memory.h \
- /usr/local/include/Geant4/CLHEP/Random/RandBinomial.icc \
- /usr/local/include/Geant4/CLHEP/Random/RandBreitWigner.h \
- /usr/local/include/Geant4/CLHEP/Random/RandFlat.h \
- /usr/local/include/Geant4/CLHEP/Utility/thread_local.h \
- /usr/local/include/Geant4/CLHEP/Random/RandFlat.icc \
- /usr/local/include/Geant4/CLHEP/Random/RandBreitWigner.icc \
- /usr/local/include/Geant4/CLHEP/Random/RandChiSquare.h \
- /usr/local/include/Geant4/CLHEP/Random/RandChiSquare.icc \
- /usr/local/include/Geant4/CLHEP/Random/RandExponential.h \
- /usr/local/include/Geant4/CLHEP/Random/RandExponential.icc \
- /usr/local/include/Geant4/CLHEP/Random/RandExpZiggurat.h \
- /usr/local/include/Geant4/CLHEP/Random/RandBit.h \
- /usr/local/include/Geant4/CLHEP/Random/RandBit.icc \
- /usr/local/include/Geant4/CLHEP/Random/RandGamma.h \
- /usr/local/include/Geant4/CLHEP/Random/RandGamma.icc \
- /usr/local/include/Geant4/CLHEP/Random/RandGauss.h \
- /usr/local/include/Geant4/CLHEP/Random/RandGauss.icc \
- /usr/local/include/Geant4/CLHEP/Random/RandGaussQ.h \
- /usr/local/include/Geant4/CLHEP/Random/RandGaussQ.icc \
- /usr/local/include/Geant4/CLHEP/Random/RandGaussZiggurat.h \
- /usr/local/include/Geant4/CLHEP/Random/RandGeneral.h \
- /usr/local/include/Geant4/CLHEP/Random/RandGeneral.icc \
- /usr/local/include/Geant4/CLHEP/Random/RandLandau.h \
- /usr/local/include/Geant4/CLHEP/Random/RandLandau.icc \
- /usr/local/include/Geant4/CLHEP/Random/RandPoissonQ.h \
- /usr/local/include/Geant4/CLHEP/Random/RandPoisson.h \
- /usr/local/include/Geant4/CLHEP/Random/RandPoisson.icc \
- /usr/local/include/Geant4/CLHEP/Random/RandPoissonQ.icc \
- /usr/local/include/Geant4/CLHEP/Random/RandStudentT.h \
- /usr/local/include/Geant4/CLHEP/Random/RandStudentT.icc \
- /usr/local/include/Geant4/G4PhysicsTable.hh \
- /usr/local/include/Geant4/G4PhysicsTable.icc \
- /usr/local/include/Geant4/G4VParticleChange.hh \
- /usr/local/include/Geant4/G4VParticleChange.icc \
- /usr/local/include/Geant4/G4ForceCondition.hh \
- /usr/local/include/Geant4/G4GPILSelection.hh \
- /usr/local/include/Geant4/G4ParticleChange.hh \
- /usr/local/include/Geant4/G4ParticleChange.icc \
- /usr/local/include/Geant4/G4ProcessType.hh \
- /usr/local/include/Geant4/G4ProcessManager.hh \
- /usr/local/include/Geant4/G4ProcessVector.hh \
- /usr/local/include/Geant4/G4ProcessVector.icc \
- /usr/local/include/Geant4/G4ProcessManager.icc \
- /usr/local/include/Geant4/G4UserSteppingAction.hh \
- /usr/local/include/Geant4/G4VSteppingVerbose.hh \
- /usr/local/include/Geant4/trkgdefs.hh \
- /usr/local/include/Geant4/G4TrackingMessenger.hh \
- /usr/local/include/Geant4/G4UImessenger.hh \
- /usr/local/include/Geant4/G4UIdirectory.hh \
- /usr/local/include/Geant4/G4UIcommand.hh \
- /usr/local/include/Geant4/G4ApplicationState.hh \
- /usr/local/include/Geant4/G4UIparameter.hh \
- /usr/local/include/Geant4/G4UserTrackingAction.hh \
- /usr/local/include/Geant4/G4RunManagerKernel.hh \
- /usr/local/include/Geant4/rundefs.hh /usr/include/c++/13/list \
- /usr/include/c++/13/bits/stl_list.h /usr/include/c++/13/bits/list.tcc \
+ /usr/local/include/Geant4/G4Step.hh \
+ /usr/local/include/Geant4/G4StepPoint.hh \
+ /usr/local/include/Geant4/G4VPhysicalVolume.hh \
  /usr/local/include/Geant4/G4LogicalVolume.hh \
  /usr/local/include/Geant4/G4AnalysisManager.hh \
  /usr/local/include/Geant4/G4GenericAnalysisManager.hh \
  /usr/local/include/Geant4/G4ToolsAnalysisManager.hh \
  /usr/local/include/Geant4/G4VAnalysisManager.hh \
  /usr/local/include/Geant4/G4AnalysisManagerState.hh \
- /usr/local/include/Geant4/G4AnalysisVerbose.hh \
+ /usr/local/include/Geant4/G4AnalysisVerbose.hh /usr/include/c++/13/array \
+ /usr/include/c++/13/compare \
  /usr/local/include/Geant4/G4AnalysisUtilities.hh \
  /usr/local/include/Geant4/G4VTBaseHnManager.hh \
  /usr/local/include/Geant4/G4HnInformation.hh \
@@ -503,6 +367,8 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: \
  /usr/local/include/Geant4/G4VAnalysisManager.icc \
  /usr/local/include/Geant4/G4HnManager.hh \
  /usr/local/include/Geant4/G4BaseAnalysisManager.hh \
+ /usr/include/c++/13/set /usr/include/c++/13/bits/stl_set.h \
+ /usr/include/c++/13/bits/stl_multiset.h \
  /usr/local/include/Geant4/G4NtupleBookingManager.hh \
  /usr/local/include/Geant4/tools/ntuple_booking \
  /usr/local/include/Geant4/tools/cids /usr/local/include/Geant4/tools/cid \
@@ -518,6 +384,11 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: \
  /usr/local/include/Geant4/G4THnManager.hh \
  /usr/local/include/Geant4/G4THnManager.icc \
  /usr/local/include/Geant4/G4THnMessenger.hh \
+ /usr/local/include/Geant4/G4UImessenger.hh \
+ /usr/local/include/Geant4/G4UIdirectory.hh \
+ /usr/local/include/Geant4/G4UIcommand.hh \
+ /usr/local/include/Geant4/G4ApplicationState.hh \
+ /usr/local/include/Geant4/G4UIparameter.hh \
  /usr/local/include/Geant4/G4THnToolsManager.icc \
  /usr/local/include/Geant4/G4THnMessenger.icc \
  /usr/local/include/Geant4/G4Tokenizer.hh \
@@ -547,4 +418,5 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: \
  /usr/local/include/Geant4/G4ToolsAnalysisManager.icc \
  /usr/local/include/Geant4/G4GenericAnalysisManager.icc \
  /usr/local/include/Geant4/G4GenericFileManager.hh \
- /usr/local/include/Geant4/G4GenericFileManager.icc
+ /usr/local/include/Geant4/G4GenericFileManager.icc \
+ /usr/local/include/Geant4/G4SystemOfUnits.hh

@@ -228,12 +228,9 @@ CMakeFiles/main.dir/src/ActionInitialization.cc.o: \
  /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc \
+ /usr/include/c++/13/bits/vector.tcc /usr/local/include/Geant4/globals.hh \
  /home/qiqi/geant4/The-Battery-eta/include/EventAction.hh \
  /usr/local/include/Geant4/G4UserEventAction.hh \
- /usr/local/include/Geant4/G4SystemOfUnits.hh \
- /usr/local/include/Geant4/CLHEP/Units/SystemOfUnits.h \
- /usr/local/include/Geant4/globals.hh \
  /home/qiqi/geant4/The-Battery-eta/include/SteppingAction.hh \
  /usr/local/include/Geant4/G4UserSteppingAction.hh \
  /home/qiqi/geant4/The-Battery-eta/include/PrimaryGeneratorAction.hh \
@@ -280,6 +277,7 @@ CMakeFiles/main.dir/src/ActionInitialization.cc.o: \
  /usr/include/c++/13/bits/this_thread_sleep.h \
  /usr/include/c++/13/stdlib.h \
  /usr/local/include/Geant4/CLHEP/Units/PhysicalConstants.h \
+ /usr/local/include/Geant4/CLHEP/Units/SystemOfUnits.h \
  /usr/local/include/Geant4/G4ParticleDefinition.icc \
  /usr/local/include/Geant4/G4SPSPosDistribution.hh \
  /usr/local/include/Geant4/G4Navigator.hh \
@@ -385,5 +383,6 @@ CMakeFiles/main.dir/src/ActionInitialization.cc.o: \
  /usr/local/include/Geant4/G4ParticleTable.hh \
  /usr/local/include/Geant4/G4ParticleTableIterator.hh \
  /usr/local/include/Geant4/G4ParticleTable.icc \
+ /usr/local/include/Geant4/G4SystemOfUnits.hh \
  /usr/local/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /home/qiqi/geant4/The-Battery-eta/include/RunAction.hh

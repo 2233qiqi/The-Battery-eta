@@ -380,7 +380,7 @@ CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.o: \
  /usr/local/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /home/qiqi/geant4/The-Battery-eta/include/RunAction.hh \
  /usr/local/include/Geant4/G4UserRunAction.hh \
- /usr/local/include/Geant4/G4Run.hh \
+ /usr/local/include/Geant4/G4Run.hh /usr/local/include/Geant4/globals.hh \
  /usr/local/include/Geant4/G4IonTable.hh \
  /usr/local/include/Geant4/G4Ions.hh \
  /usr/local/include/Geant4/G4ParticleTable.hh \

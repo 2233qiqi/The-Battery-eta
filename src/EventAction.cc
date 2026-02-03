@@ -1,52 +1,41 @@
 #include "EventAction.hh"
+#include "RunAction.hh"
+#include "G4RunManager.hh"
 #include "G4Event.hh"
-#include "G4SystemOfUnits.hh"
-#include "G4AnalysisManager.hh"
 
-EventAction::EventAction():G4UserEventAction(),fTotalEdep (0)
+EventAction::EventAction()
+: G4UserEventAction(),
+  fEnteredSiC(false),
+  fTotalEdep(0.)
+{}
+
+EventAction::~EventAction() {}
+
+void EventAction::BeginOfEventAction(const G4Event*)
 {
-
+    fEnteredSiC = false;  
+    fTotalEdep = 0.; 
 }
 
-EventAction::~EventAction()
+void EventAction::SetEnteredSiC()
 {
-
+    fEnteredSiC = true;
 }
 
-void EventAction :: BeginOfEventAction (const G4Event *event)
+G4bool EventAction::HasEnteredSiC() const
 {
-    fTotalEdep =0;
-    fEnterCounts = false;
+    return fEnteredSiC;
 }
 
-void EventAction::AddEdep(G4double edep)
+void EventAction::EndOfEventAction(const G4Event*)
 {
-    fTotalEdep += edep;
     
-}
+    if (!fEnteredSiC) return;
 
-void EventAction::EneterCounts()
-{
-    fEnterCounts = true;
-}
-
-void EventAction :: EndOfEventAction(const G4Event *event)
-{
-    if (fTotalEdep > 0) 
-        {
-           auto analysisManager = G4AnalysisManager::Instance();
-           analysisManager->FillH1(0, fTotalEdep);
-        }
-    if (fEnterCounts) 
-    {
-        auto analysisManager = G4AnalysisManager::Instance();
-        analysisManager->FillH1(2, 1);  
+    const G4UserRunAction* userRunAction = G4RunManager::GetRunManager()->GetUserRunAction();
+    RunAction* runAction = const_cast<RunAction*>(static_cast<const RunAction*>(userRunAction));
+    
+    if(runAction) {
+        runAction->AddEnteredEvent();
     }
-    
-    G4cout << "Total energy deposition in SiC: "
-           << fTotalEdep / keV << " keV" << G4endl;
-    fTotalEdep = 0.;
-     
-   
 }
-

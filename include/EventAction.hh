@@ -2,7 +2,6 @@
 #define EventAction_h 1
 
 #include "G4UserEventAction.hh"
-#include "G4SystemOfUnits.hh"
 #include "globals.hh"
 
 class EventAction : public G4UserEventAction
@@ -11,17 +10,17 @@ public:
     EventAction();
     virtual ~EventAction();
 
-    virtual void BeginOfEventAction(const G4Event* event);
-    virtual void EndOfEventAction(const G4Event* event);
+    virtual void BeginOfEventAction(const G4Event*);
+    virtual void EndOfEventAction(const G4Event*);
 
-    virtual void AddEdep(G4double edep);
-    virtual void EneterCounts();
-    G4bool EneterCounts()const {return fEnterCounts;}
+    void SetEnteredSiC();          
+    G4bool HasEnteredSiC() const; 
+    
+    void AddEdep(G4double edep){ fTotalEdep += edep; }
 
 private:
+    G4bool fEnteredSiC;
     G4double fTotalEdep;
-    G4bool   fEnterCounts;
-
 };
 
-#endif 
+#endif
