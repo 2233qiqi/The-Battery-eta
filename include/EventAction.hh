@@ -13,12 +13,14 @@ public:
 
     virtual void BeginOfEventAction(const G4Event* event);
     virtual void EndOfEventAction(const G4Event* event);
+
     virtual void AddEdep(G4double edep);
-    void EnteredSiC();
+    virtual void EneterCounts();
+    G4bool EneterCounts()const {return fEnterCounts;}
 
 private:
     G4double fTotalEdep;
-    G4bool   fEnteredSiC;
+    G4bool   fEnterCounts;
 
 };
 

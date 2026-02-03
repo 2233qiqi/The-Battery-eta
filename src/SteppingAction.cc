@@ -23,17 +23,36 @@ SteppingAction :: ~SteppingAction()
 
 void SteppingAction::UserSteppingAction(const G4Step* step)
 {  
-  G4LogicalVolume* volume = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume()->GetLogicalVolume();
-  G4double edep = step->GetTotalEnergyDeposit();
+   G4LogicalVolume* volume = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume()->GetLogicalVolume();
+   G4double edep = step->GetTotalEnergyDeposit();
   
     if (volume->GetName() == "LogicalSic") {
         if (edep > 0.) 
         {
             fEventAction->AddEdep(edep);
         }
-      
+
     }
 
+    G4StepPoint* prePoint  = step->GetPreStepPoint();
+    G4StepPoint* postPoint = step->GetPostStepPoint();
+
+    G4VPhysicalVolume* prePV =prePoint->GetTouchableHandle()->GetVolume();
+    G4VPhysicalVolume* postPV=postPoint->GetTouchableHandle()->GetVolume();
+    G4VPhysicalVolume* postPV =postPoint->GetTouchableHandle()->GetVolume();
+    if (postPV != NULL)
+    {
+        G4LogicalVolume* postVol =
+            postPV->GetLogicalVolume();
+
+        if (postVol ->GetName()== "LogicalSic" && prePV->GetLogicalVolume()->GetName()!="LogicalSic")
+        {
+            fEventAction->EneterCounts();
+        }
+    }
+
+
+     
     G4double z = step->GetPreStepPoint()->GetPosition().z();
     G4double z0 =(0.5/ 2)*um;
     G4double z1 = z - z0;

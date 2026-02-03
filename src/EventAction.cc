@@ -16,7 +16,7 @@ EventAction::~EventAction()
 void EventAction :: BeginOfEventAction (const G4Event *event)
 {
     fTotalEdep =0;
-    fEnteredSiC = false;
+    fEnterCounts = false;
 }
 
 void EventAction::AddEdep(G4double edep)
@@ -25,9 +25,9 @@ void EventAction::AddEdep(G4double edep)
     
 }
 
-void EventAction::EnteredSiC()
+void EventAction::EneterCounts()
 {
-    fEnteredSiC = true;
+    fEnterCounts = true;
 }
 
 void EventAction :: EndOfEventAction(const G4Event *event)
@@ -37,7 +37,7 @@ void EventAction :: EndOfEventAction(const G4Event *event)
            auto analysisManager = G4AnalysisManager::Instance();
            analysisManager->FillH1(0, fTotalEdep);
         }
-    if (fEnteredSiC) 
+    if (fEnterCounts) 
     {
         auto analysisManager = G4AnalysisManager::Instance();
         analysisManager->FillH1(2, 1);  
