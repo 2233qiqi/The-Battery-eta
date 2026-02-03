@@ -3,7 +3,7 @@
 #include "G4AnalysisManager.hh"
 #include "G4SystemOfUnits.hh"
 
-RunAction::RunAction(): G4UserRunAction(),fEnterCounts(0)
+RunAction::RunAction(): G4UserRunAction(),fEnteredSiC(0)
 {
     G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
 
@@ -20,18 +20,18 @@ void RunAction::BeginOfRunAction(const G4Run*)
     G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
     analysisManager->OpenFile();
     
-    fEnterCounts = 0; 
+    fEnteredSiC = 0; 
 }
 
 void RunAction::AddEnteredEvent()
 {
-    fEnterCounts++;
+    fEnteredSiC++;
 }
 
 void RunAction::EndOfRunAction(const G4Run*)
 {
     
-    G4cout << " Total events entered SiC: " << fEnterCounts << G4endl;
+    G4cout << " Total events entered SiC: " << fEnteredSiC << G4endl;
    
     G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
     analysisManager->Write();

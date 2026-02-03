@@ -17,7 +17,7 @@ public:
     void AddEnteredEvent(); 
 
 private:
-    G4int fEnterCounts; 
+    G4int fEnteredSiC; 
 };
 
 #endif
