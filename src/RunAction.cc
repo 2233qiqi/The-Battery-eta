@@ -3,9 +3,7 @@
 #include "G4AnalysisManager.hh"
 #include "G4SystemOfUnits.hh"
 
-RunAction::RunAction()
-: G4UserRunAction(),
-  fEnterCounts(0)
+RunAction::RunAction(): G4UserRunAction(),fEnterCounts(0)
 {
     G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
 
