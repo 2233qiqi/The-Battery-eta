@@ -19,6 +19,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 {
     G4StepPoint* prePoint  = step->GetPreStepPoint();
     G4StepPoint* postPoint = step->GetPostStepPoint();
+    
     if (!postPoint) return;
 
     G4VPhysicalVolume* prePV = prePoint->GetTouchableHandle()->GetVolume();
@@ -35,19 +36,24 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
         
         if (edep > 0.)
         {
-
             fEventAction->AddEdep(edep);
 
+            G4double globalZ = prePoint->GetPosition().z();
 
-            G4double z_depth = prePoint->GetPosition().z();
-            
+            G4double sicFrontSurfaceZ = 0.25 * um;
+
+            G4double depth = globalZ - sicFrontSurfaceZ;
+
             G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
 
-            analysisManager->FillH1(0, z_depth, edep);
+            analysisManager->FillH1(0, depth, edep);
         }
     }
     
-    if ( !fEventAction->HasEnteredSiC() &&preLV->GetName()  != "LogicalSic" && postLV->GetName() == "LogicalSic" )
+
+    if ( !fEventAction->HasEnteredSiC() &&
+         preLV->GetName()  != "LogicalSic" &&
+         postLV->GetName() == "LogicalSic" )
     {
         fEventAction->SetEnteredSiC();
     }
