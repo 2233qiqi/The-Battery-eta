@@ -27,11 +27,11 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
   G4double edep = step->GetTotalEnergyDeposit();
   
     if (volume->GetName() == "LogicalSic") {
-        
-
-        if (edep > 0.) {
+        if (edep > 0.) 
+        {
             fEventAction->AddEdep(edep);
         }
+      
     }
 
     G4double z = step->GetPreStepPoint()->GetPosition().z();
@@ -44,5 +44,6 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
     auto analysisManager = G4AnalysisManager::Instance();
     analysisManager->FillH1(0, z1, edep);
     analysisManager->FillH1(1,z1);
+
 }
 

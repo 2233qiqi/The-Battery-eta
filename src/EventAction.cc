@@ -18,6 +18,12 @@ void EventAction :: BeginOfEventAction (const G4Event *event)
     fTotalEdep =0;
 }
 
+void EventAction::AddEdep(G4double edep)
+{
+    fTotalEdep += edep;
+    
+}
+
 void EventAction :: EndOfEventAction(const G4Event *event)
 {
     if (fTotalEdep > 0) 
@@ -26,10 +32,10 @@ void EventAction :: EndOfEventAction(const G4Event *event)
            analysisManager->FillH1(0, fTotalEdep);
         }
     
+    G4cout << "Total energy deposition in SiC: "
+           << fTotalEdep / keV << " keV" << G4endl;
     fTotalEdep = 0.;
+     
+   
 }
 
-void EventAction::AddEdep(G4double edep)
-{
-    fTotalEdep += edep;
-}
