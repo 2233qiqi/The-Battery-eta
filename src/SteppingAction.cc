@@ -47,9 +47,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
         }
     }
     
-    if ( !fEventAction->HasEnteredSiC() &&
-         preLV->GetName()  != "LogicalSic" &&
-         postLV->GetName() == "LogicalSic" )
+    if ( !fEventAction->HasEnteredSiC() &&preLV->GetName()  != "LogicalSic" && postLV->GetName() == "LogicalSic" )
     {
         fEventAction->SetEnteredSiC();
     }

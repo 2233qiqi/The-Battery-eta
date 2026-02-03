@@ -35,7 +35,8 @@ void EventAction::EndOfEventAction(const G4Event*)
     const G4UserRunAction* userRunAction = G4RunManager::GetRunManager()->GetUserRunAction();
     RunAction* runAction = const_cast<RunAction*>(static_cast<const RunAction*>(userRunAction));
     
-    if(runAction) {
+    if(runAction)
+    {
         runAction->AddEnteredEvent();
     }
 }
