@@ -34,7 +34,7 @@ plt.xlabel("Source Thickness (μm)", fontsize=14)
 plt.ylabel("Power Density (μW·cm$^{-2}$)", fontsize=14)
 
 # 坐标轴范围（根据你数据调）
-plt.xlim(0, 0.1)
+plt.xlim(0, 0.011)
 
 # 坐标轴刻度风格（关键）
 plt.tick_params(
