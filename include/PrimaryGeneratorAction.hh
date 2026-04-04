@@ -8,12 +8,13 @@
 #include "G4ParticleTable.hh"
 #include "G4SystemOfUnits.hh"
 #include "G4VUserPrimaryGeneratorAction.hh"
-#include "RunAction.hh"
+
+class RunAction;
 
 class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
 {
 public:
-  PrimaryGeneratorAction();
+  PrimaryGeneratorAction(RunAction* runAction = nullptr);
   virtual ~PrimaryGeneratorAction();
   virtual void GeneratePrimaries(G4Event *);
 
@@ -22,6 +23,7 @@ private:
   G4ParticleTable *particleTable;
   G4ParticleDefinition *particleDefinition;
   G4GeneralParticleSource *fGPS;
+  RunAction* fRunAction;
 };
 
 #endif

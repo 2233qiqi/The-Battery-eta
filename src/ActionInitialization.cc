@@ -18,12 +18,13 @@ void ActionInitialization::BuildForMaster() const
 
 void ActionInitialization::Build() const
 {
-  SetUserAction(new PrimaryGeneratorAction()); 
+  auto runAction = new RunAction();
+  SetUserAction(runAction);
 
-  SetUserAction(new RunAction());
+  SetUserAction(new PrimaryGeneratorAction(runAction));
 
   auto eventAction = new EventAction();
   SetUserAction(eventAction);
 
-  SetUserAction(new SteppingAction(eventAction));
+  SetUserAction(new SteppingAction(eventAction, runAction));
 }

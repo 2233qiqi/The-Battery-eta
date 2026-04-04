@@ -1,5 +1,6 @@
 #include "SteppingAction.hh"
 #include "EventAction.hh"
+#include "RunAction.hh"
 
 #include "G4Step.hh"
 #include "G4StepPoint.hh"
@@ -8,9 +9,10 @@
 #include "G4AnalysisManager.hh"
 #include "G4SystemOfUnits.hh"
 
-SteppingAction::SteppingAction(EventAction* eventAction)
+SteppingAction::SteppingAction(EventAction* eventAction, RunAction* runAction)
 : G4UserSteppingAction(),
-  fEventAction(eventAction)
+  fEventAction(eventAction),
+  fRunAction(runAction)
 {}
 
 SteppingAction::~SteppingAction() {}
@@ -30,6 +32,18 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
     G4LogicalVolume* postLV = postPV->GetLogicalVolume();
     G4LogicalVolume* preLV  = prePV->GetLogicalVolume();
 
+    if (postLV->GetName() == "LogicalNi")
+    {
+        G4double edepNi = step->GetTotalEnergyDeposit();
+        if (edepNi > 0. && fRunAction)
+        {
+            fRunAction->AddEnergyInNi(edepNi);
+            
+            G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
+            analysisManager->FillH1(1, edepNi);
+        }
+    }
+
     if (postLV->GetName() == "LogicalSic")
     {
         G4double edep = step->GetTotalEnergyDeposit();
@@ -37,16 +51,23 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
         if (edep > 0.)
         {
             fEventAction->AddEdep(edep);
+            if (fRunAction)
+            {
+                fRunAction->AddEnergyInSiC(edep);
+            }
 
-            G4double globalZ = prePoint->GetPosition().z();
-
+            G4double postPointZ = postPoint->GetPosition().z();
+            
             G4double sicFrontSurfaceZ = 0.25 * um;
+            
 
-            G4double depth = globalZ - sicFrontSurfaceZ;
-
-            G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
-
-            analysisManager->FillH1(0, depth, edep);
+            G4double depth = postPointZ - sicFrontSurfaceZ;
+            
+            if (depth >= 0. && depth <= 310.3*um)
+            {
+                G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
+                analysisManager->FillH1(0, depth, edep);
+            }
         }
     }
     

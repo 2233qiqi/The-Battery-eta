@@ -61,7 +61,7 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
 
     G4Box *SolidSic = new G4Box ("Sic",Sic_X/2,Sic_Y/2,Sic_Z/2);
     G4LogicalVolume* LogicalVolumeSic = new G4LogicalVolume(SolidSic,Sic,"LogicalSic");
-    G4VPhysicalVolume *PhysicalSic = new G4PVPlacement (0,G4ThreeVector(0,0,(Ni_Z/2+Sic_Z/2)),LogicalVolumeSic,"PhysicalSic",LogicalWorld,false,0,true);
+    G4VPhysicalVolume *PhysicalSic = new G4PVPlacement (0,G4ThreeVector(0,0,(Ni_Z/2.0 + Sic_Z/2.0)),LogicalVolumeSic,"PhysicalSic",LogicalWorld,false,0,true);
 
     //可视化
     G4VisAttributes* Ni_VisAtt = new G4VisAttributes(G4Color(1.0,0.0,0.0,0.7));

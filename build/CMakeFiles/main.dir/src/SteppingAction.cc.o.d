@@ -225,7 +225,13 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: \
  /usr/include/c++/13/bits/parse_numbers.h \
  /usr/include/c++/13/bits/std_mutex.h \
  /usr/include/c++/13/bits/unique_lock.h \
- /usr/local/include/Geant4/G4Step.hh /usr/local/include/Geant4/globals.hh \
+ /home/qiqi/geant4/The-Battery-eta/include/RunAction.hh \
+ /usr/local/include/Geant4/G4UserRunAction.hh \
+ /usr/local/include/Geant4/G4Run.hh /usr/local/include/Geant4/globals.hh \
+ /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc /usr/local/include/Geant4/G4Step.hh \
  /usr/local/include/Geant4/G4ThreeVector.hh \
  /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.h \
  /usr/local/include/Geant4/CLHEP/Utility/defs.h \
@@ -264,11 +270,7 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: \
  /usr/include/c++/13/bits/atomic_futex.h /usr/include/c++/13/atomic \
  /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/bits/std_thread.h /usr/include/c++/13/thread \
- /usr/include/c++/13/bits/this_thread_sleep.h /usr/include/c++/13/vector \
- /usr/include/c++/13/bits/stl_uninitialized.h \
- /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc \
+ /usr/include/c++/13/bits/this_thread_sleep.h \
  /usr/local/include/Geant4/G4VPhysicalVolume.icc \
  /usr/local/include/Geant4/G4StepPoint.hh \
  /usr/local/include/Geant4/G4Allocator.hh \

@@ -14,10 +14,16 @@ public:
     virtual void BeginOfRunAction(const G4Run*);
     virtual void EndOfRunAction(const G4Run*);
 
-    void AddEnteredEvent(); 
+    void AddEnteredEvent();
+    void AddEnergyInNi(G4double edep);
+    void AddEnergyInSiC(G4double edep);
+    void AddTotalParticles();
 
 private:
     G4int fEnteredSiC; 
+    G4int fTotalParticles;
+    G4double fTotalEnergyNi;
+    G4double fTotalEnergySiC;
 };
 
 #endif
