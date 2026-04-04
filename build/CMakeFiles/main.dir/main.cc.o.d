@@ -604,12 +604,6 @@ CMakeFiles/main.dir/main.cc.o: /home/qiqi/geant4/The-Battery-eta/main.cc \
  /usr/include/c++/13/functional /usr/local/include/Geant4/G4UIbatch.hh \
  /usr/local/include/Geant4/G4UIExecutive.hh \
  /usr/local/include/Geant4/G4VUIshell.hh \
- /usr/local/include/Geant4/G4MTRunManager.hh \
- /usr/local/include/Geant4/G4MTBarrier.hh \
- /usr/local/include/Geant4/G4RNGHelper.hh /usr/include/c++/13/queue \
- /usr/include/c++/13/deque /usr/include/c++/13/bits/stl_deque.h \
- /usr/include/c++/13/bits/deque.tcc /usr/include/c++/13/bits/stl_queue.h \
- /usr/local/include/Geant4/G4RunManager.hh \
  /home/qiqi/geant4/The-Battery-eta/include/DetectorConstruction.hh \
  /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
  /usr/local/include/Geant4/globals.hh \

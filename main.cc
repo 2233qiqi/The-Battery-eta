@@ -2,7 +2,6 @@
 #include "G4UImanager.hh"
 #include "G4VisExecutive.hh"
 #include "G4UIExecutive.hh"
-#include "G4MTRunManager.hh"
 
 #include "DetectorConstruction.hh"
 #include "PhysicsList.hh"
@@ -10,7 +9,7 @@
 
 int main(int argc, char** argv)
 {
-    auto* runManager = new G4MTRunManager;
+    auto* runManager = new G4RunManager;
 
     runManager->SetUserInitialization(new DetectorConstruction());
     runManager->SetUserInitialization(new PhysicsList());
