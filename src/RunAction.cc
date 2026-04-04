@@ -68,6 +68,7 @@ void RunAction::EndOfRunAction(const G4Run*)
     G4cout << "=====================================" << G4endl;
     G4cout << " 总粒子数:                 " << fTotalParticles << G4endl;
     G4cout << " 进入SiC的粒子数:          " << fEnteredSiC << G4endl;
+ 
     
     if (fTotalParticles > 0)
     {
