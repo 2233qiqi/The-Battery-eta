@@ -68,10 +68,6 @@ void RunAction::AddInitialParticleEnergy(G4double energy)
 
 void RunAction::EndOfRunAction(const G4Run*)
 {
-    
-    G4cout << "=====================================" << G4endl;
-    G4cout << " 运行统计结果 " << G4endl;
-    G4cout << "=====================================" << G4endl;
     G4cout << " 总粒子数:                 " << fTotalParticles << G4endl;
     G4cout << " 进入SiC的粒子数:          " << fEnteredSiC << G4endl;
  
@@ -90,9 +86,7 @@ void RunAction::EndOfRunAction(const G4Run*)
         G4double sicRatio = fTotalEnergySiC / fTotalInitialEnergy * 100.;
         G4cout << " SiC能量与总能量比:       " << sicRatio << " %" << G4endl;
     }
-    
-    G4cout << "=====================================" << G4endl;
-   
+       
     G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
     analysisManager->Write();
     analysisManager->CloseFile();
