@@ -18,12 +18,14 @@ public:
     void AddEnergyInNi(G4double edep);
     void AddEnergyInSiC(G4double edep);
     void AddTotalParticles();
+    void AddInitialParticleEnergy(G4double energy);
 
 private:
     G4int fEnteredSiC; 
     G4int fTotalParticles;
     G4double fTotalEnergyNi;
     G4double fTotalEnergySiC;
+    G4double fTotalInitialEnergy;
 };
 
 #endif

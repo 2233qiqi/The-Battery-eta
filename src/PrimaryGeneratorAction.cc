@@ -25,6 +25,17 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event *event)
     }
     
     fGPS->GeneratePrimaryVertex(event);
+    
+    // 获取粒子初始能量
+    if (event->GetNumberOfPrimaryVertex() > 0)
+    {
+        G4PrimaryParticle* particle = event->GetPrimaryVertex(0)->GetPrimary(0);
+        if (particle && fRunAction)
+        {
+            G4double kineticEnergy = particle->GetKineticEnergy();
+            fRunAction->AddInitialParticleEnergy(kineticEnergy);
+        }
+    }
 }
 
 PrimaryGeneratorAction::~PrimaryGeneratorAction()

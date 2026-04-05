@@ -702,6 +702,7 @@ CMakeFiles/main.dir/main.cc.o: /home/qiqi/geant4/The-Battery-eta/main.cc \
 
 CMakeFiles/main.dir/src/ActionInitialization.cc.o: /home/qiqi/geant4/The-Battery-eta/src/ActionInitialization.cc \
   /home/qiqi/geant4/The-Battery-eta/include/ActionInitialization.hh \
+  /home/qiqi/geant4/The-Battery-eta/include/DetectorConstruction.hh \
   /home/qiqi/geant4/The-Battery-eta/include/EventAction.hh \
   /home/qiqi/geant4/The-Battery-eta/include/PrimaryGeneratorAction.hh \
   /home/qiqi/geant4/The-Battery-eta/include/RunAction.hh \
@@ -1135,6 +1136,7 @@ CMakeFiles/main.dir/src/ActionInitialization.cc.o: /home/qiqi/geant4/The-Battery
   /usr/local/include/Geant4/G4VTouchable.hh \
   /usr/local/include/Geant4/G4VTrajectory.hh \
   /usr/local/include/Geant4/G4VUserActionInitialization.hh \
+  /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
   /usr/local/include/Geant4/G4VUserEventInformation.hh \
   /usr/local/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
   /usr/local/include/Geant4/G4VVolumeMaterialScanner.hh \
@@ -3451,6 +3453,7 @@ CMakeFiles/main.dir/src/RunAction.cc.o: /home/qiqi/geant4/The-Battery-eta/src/Ru
   /usr/local/include/Geant4/tools/typedefs
 
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/src/SteppingAction.cc \
+  /home/qiqi/geant4/The-Battery-eta/include/DetectorConstruction.hh \
   /home/qiqi/geant4/The-Battery-eta/include/EventAction.hh \
   /home/qiqi/geant4/The-Battery-eta/include/RunAction.hh \
   /home/qiqi/geant4/The-Battery-eta/include/SteppingAction.hh \
@@ -3904,6 +3907,7 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
   /usr/local/include/Geant4/G4VTBaseHnManager.hh \
   /usr/local/include/Geant4/G4VTHnFileManager.hh \
   /usr/local/include/Geant4/G4VTouchable.hh \
+  /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
   /usr/local/include/Geant4/G4VUserTrackInformation.hh \
   /usr/local/include/Geant4/G4ios.hh \
   /usr/local/include/Geant4/geomdefs.hh \

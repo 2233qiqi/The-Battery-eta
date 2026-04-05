@@ -3,7 +3,7 @@
 #include "G4AnalysisManager.hh"
 #include "G4SystemOfUnits.hh"
 
-RunAction::RunAction(): G4UserRunAction(),fEnteredSiC(0),fTotalParticles(0),fTotalEnergyNi(0.),fTotalEnergySiC(0.)
+RunAction::RunAction(): G4UserRunAction(),fEnteredSiC(0),fTotalParticles(0),fTotalEnergyNi(0.),fTotalEnergySiC(0.),fTotalInitialEnergy(0.)
 {
     G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
 
@@ -38,6 +38,7 @@ void RunAction::BeginOfRunAction(const G4Run*)
     fTotalParticles = 0;
     fTotalEnergyNi = 0.;
     fTotalEnergySiC = 0.;
+    fTotalInitialEnergy = 0.;
 }
 
 void RunAction::AddEnteredEvent()
@@ -60,6 +61,11 @@ void RunAction::AddTotalParticles()
     fTotalParticles++;
 }
 
+void RunAction::AddInitialParticleEnergy(G4double energy)
+{
+    fTotalInitialEnergy += energy;
+}
+
 void RunAction::EndOfRunAction(const G4Run*)
 {
     
@@ -75,8 +81,16 @@ void RunAction::EndOfRunAction(const G4Run*)
         G4cout << " 进入效率:                 " << (G4double)fEnteredSiC/fTotalParticles*100. << " %" << G4endl;
     }
     
+    G4cout << " 总初始粒子能量:           " << fTotalInitialEnergy/MeV << " MeV" << G4endl;
     G4cout << " Ni层总能量损失:           " << fTotalEnergyNi/MeV << " MeV" << G4endl;
     G4cout << " SiC层总能量沉积:          " << fTotalEnergySiC/MeV << " MeV" << G4endl;
+    
+    if (fTotalInitialEnergy > 0.)
+    {
+        G4double sicRatio = fTotalEnergySiC / fTotalInitialEnergy * 100.;
+        G4cout << " SiC能量与总能量比:       " << sicRatio << " %" << G4endl;
+    }
+    
     G4cout << "=====================================" << G4endl;
    
     G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
