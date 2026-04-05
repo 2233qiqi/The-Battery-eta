@@ -3,9 +3,11 @@
 #include "EventAction.hh"
 #include "SteppingAction.hh"
 #include "PrimaryGeneratorAction.hh" 
+#include "DetectorConstruction.hh"
 
-ActionInitialization::ActionInitialization()
-: G4VUserActionInitialization()
+ActionInitialization::ActionInitialization(DetectorConstruction* det)
+: G4VUserActionInitialization(),
+  fDetector(det)
 {}
 
 ActionInitialization::~ActionInitialization()
@@ -21,5 +23,5 @@ void ActionInitialization::Build() const
   auto eventAction = new EventAction();
   SetUserAction(eventAction);
 
-  SetUserAction(new SteppingAction(eventAction, runAction));
+  SetUserAction(new SteppingAction(eventAction, runAction, fDetector));
 }

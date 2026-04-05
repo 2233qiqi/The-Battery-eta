@@ -1,6 +1,7 @@
 #include "SteppingAction.hh"
 #include "EventAction.hh"
 #include "RunAction.hh"
+#include "DetectorConstruction.hh"
 
 #include "G4Step.hh"
 #include "G4StepPoint.hh"
@@ -9,10 +10,11 @@
 #include "G4AnalysisManager.hh"
 #include "G4SystemOfUnits.hh"
 
-SteppingAction::SteppingAction(EventAction* eventAction, RunAction* runAction)
+SteppingAction::SteppingAction(EventAction* eventAction, RunAction* runAction, DetectorConstruction* det)
 : G4UserSteppingAction(),
   fEventAction(eventAction),
-  fRunAction(runAction)
+  fRunAction(runAction),
+  fDetector(det)
 {}
 
 SteppingAction::~SteppingAction() {}
@@ -58,12 +60,12 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
 
             G4double postPointZ = postPoint->GetPosition().z();
             
-            G4double sicFrontSurfaceZ = 0.25 * um;
+            G4double sicFrontSurfaceZ = fDetector->GetNiThickness();
             
 
             G4double depth = postPointZ - sicFrontSurfaceZ;
             
-            if (depth >= 0. && depth <= 310.3*um)
+            if (depth >= 0. && depth <= fDetector->GetSicThickness())
             {
                 G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
                 analysisManager->FillH1(0, depth, edep);

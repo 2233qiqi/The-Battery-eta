@@ -11,9 +11,10 @@ int main(int argc, char** argv)
 {
     auto* runManager = new G4RunManager;
 
-    runManager->SetUserInitialization(new DetectorConstruction());
+    auto* detector = new DetectorConstruction();
+    runManager->SetUserInitialization(detector);
     runManager->SetUserInitialization(new PhysicsList());
-    runManager->SetUserInitialization(new ActionInitialization());
+    runManager->SetUserInitialization(new ActionInitialization(detector));
 
     auto* visManager = new G4VisExecutive;
     visManager->Initialize();

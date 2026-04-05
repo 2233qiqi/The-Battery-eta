@@ -231,7 +231,10 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc /usr/local/include/Geant4/G4Step.hh \
+ /usr/include/c++/13/bits/vector.tcc \
+ /home/qiqi/geant4/The-Battery-eta/include/DetectorConstruction.hh \
+ /usr/local/include/Geant4/G4VUserDetectorConstruction.hh \
+ /usr/local/include/Geant4/G4Step.hh \
  /usr/local/include/Geant4/G4ThreeVector.hh \
  /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.h \
  /usr/local/include/Geant4/CLHEP/Utility/defs.h \

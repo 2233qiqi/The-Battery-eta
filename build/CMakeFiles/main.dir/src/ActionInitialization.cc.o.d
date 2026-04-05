@@ -384,4 +384,6 @@ CMakeFiles/main.dir/src/ActionInitialization.cc.o: \
  /usr/local/include/Geant4/G4ParticleTableIterator.hh \
  /usr/local/include/Geant4/G4ParticleTable.icc \
  /usr/local/include/Geant4/G4SystemOfUnits.hh \
- /usr/local/include/Geant4/G4VUserPrimaryGeneratorAction.hh
+ /usr/local/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
+ /home/qiqi/geant4/The-Battery-eta/include/DetectorConstruction.hh \
+ /usr/local/include/Geant4/G4VUserDetectorConstruction.hh

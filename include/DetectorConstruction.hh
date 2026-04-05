@@ -14,16 +14,14 @@ class DetectorConstruction : public G4VUserDetectorConstruction
     DetectorConstruction();
     ~DetectorConstruction() override;
     virtual G4VPhysicalVolume* Construct();
-    G4double NiThnickness()const 
-    {
-        return Ni_Z;
-    }
-
+    G4double GetNiThickness() const { return Ni_Z; }
+    G4double GetSicThickness() const { return Sic_Z; }
 
     private:
     void DefineMaterials();
     G4LogicalVolume* fLogicGeCrystal; 
     G4double Ni_Z;
+    G4double Sic_Z;
 };
 
 #endif

@@ -35,7 +35,6 @@ CMakeFiles/main.dir/main.cc.o: /home/qiqi/geant4/The-Battery-eta/main.cc \
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
   /usr/include/c++/13/bits/cxxabi_init_exception.h \
-  /usr/include/c++/13/bits/deque.tcc \
   /usr/include/c++/13/bits/enable_special_members.h \
   /usr/include/c++/13/bits/erase_if.h \
   /usr/include/c++/13/bits/exception.h \
@@ -88,7 +87,6 @@ CMakeFiles/main.dir/main.cc.o: /home/qiqi/geant4/The-Battery-eta/main.cc \
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_bvector.h \
   /usr/include/c++/13/bits/stl_construct.h \
-  /usr/include/c++/13/bits/stl_deque.h \
   /usr/include/c++/13/bits/stl_function.h \
   /usr/include/c++/13/bits/stl_heap.h \
   /usr/include/c++/13/bits/stl_iterator.h \
@@ -99,7 +97,6 @@ CMakeFiles/main.dir/main.cc.o: /home/qiqi/geant4/The-Battery-eta/main.cc \
   /usr/include/c++/13/bits/stl_multimap.h \
   /usr/include/c++/13/bits/stl_multiset.h \
   /usr/include/c++/13/bits/stl_pair.h \
-  /usr/include/c++/13/bits/stl_queue.h \
   /usr/include/c++/13/bits/stl_raw_storage_iter.h \
   /usr/include/c++/13/bits/stl_relops.h \
   /usr/include/c++/13/bits/stl_set.h \
@@ -139,7 +136,6 @@ CMakeFiles/main.dir/main.cc.o: /home/qiqi/geant4/The-Battery-eta/main.cc \
   /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
   /usr/include/c++/13/debug/debug.h \
-  /usr/include/c++/13/deque \
   /usr/include/c++/13/exception \
   /usr/include/c++/13/ext/aligned_buffer.h \
   /usr/include/c++/13/ext/alloc_traits.h \
@@ -169,7 +165,6 @@ CMakeFiles/main.dir/main.cc.o: /home/qiqi/geant4/The-Battery-eta/main.cc \
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
-  /usr/include/c++/13/queue \
   /usr/include/c++/13/ratio \
   /usr/include/c++/13/set \
   /usr/include/c++/13/sstream \
@@ -459,8 +454,6 @@ CMakeFiles/main.dir/main.cc.o: /home/qiqi/geant4/The-Battery-eta/main.cc \
   /usr/local/include/Geant4/G4LogicalVolume.icc \
   /usr/local/include/Geant4/G4LorentzVector.hh \
   /usr/local/include/Geant4/G4MCCIndexConversionTable.hh \
-  /usr/local/include/Geant4/G4MTBarrier.hh \
-  /usr/local/include/Geant4/G4MTRunManager.hh \
   /usr/local/include/Geant4/G4Material.hh \
   /usr/local/include/Geant4/G4MaterialCutsCouple.hh \
   /usr/local/include/Geant4/G4MaterialPropertiesIndex.hh \
@@ -537,7 +530,6 @@ CMakeFiles/main.dir/main.cc.o: /home/qiqi/geant4/The-Battery-eta/main.cc \
   /usr/local/include/Geant4/G4ProductionCuts.hh \
   /usr/local/include/Geant4/G4ProductionCutsTable.hh \
   /usr/local/include/Geant4/G4PseudoScene.hh \
-  /usr/local/include/Geant4/G4RNGHelper.hh \
   /usr/local/include/Geant4/G4RayTracer.hh \
   /usr/local/include/Geant4/G4ReferenceCountedHandle.hh \
   /usr/local/include/Geant4/G4Region.hh \
@@ -4231,6 +4223,8 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 
 /usr/local/include/Geant4/G4SubEventTrackStack.hh:
 
+/usr/local/include/Geant4/G4SubEvent.hh:
+
 /usr/local/include/Geant4/G4String.icc:
 
 /usr/local/include/Geant4/G4THnManager.icc:
@@ -4271,18 +4265,6 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 
 /usr/local/include/Geant4/G4Scene.icc:
 
-/usr/local/include/Geant4/G4Scene.hh:
-
-/usr/local/include/Geant4/G4SandiaTable.hh:
-
-/usr/local/include/Geant4/G4RunManagerKernel.hh:
-
-/usr/local/include/Geant4/G4RotationMatrix.hh:
-
-/usr/local/include/Geant4/G4ReplicaNavigation.icc:
-
-/usr/local/include/Geant4/G4RegularNavigation.hh:
-
 /usr/local/include/Geant4/templates.hh:
 
 /usr/include/time.h:
@@ -4313,6 +4295,14 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 
 /usr/local/include/Geant4/G4Polyhedron.hh:
 
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/c++/13/bits/requires_hosted.h:
+
+/usr/local/include/Geant4/G4TrackStack.hh:
+
+/usr/local/include/Geant4/G4ParticleDefinition.icc:
+
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
@@ -4330,6 +4320,26 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
 /usr/include/pthread.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/c++/13/bits/enable_special_members.h:
+
+/usr/include/stdint.h:
+
+/usr/include/endian.h:
+
+/usr/local/include/Geant4/CLHEP/Geometry/Transform3D.icc:
+
+/usr/local/include/Geant4/G4AttDef.hh:
+
+/usr/local/include/Geant4/G4Polycone.icc:
+
+/usr/local/include/Geant4/G4VDigi.hh:
+
+/usr/include/linux/limits.h:
+
+/usr/include/c++/13/ratio:
 
 /home/qiqi/geant4/The-Battery-eta/src/SteppingAction.cc:
 
@@ -4408,28 +4418,6 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 /usr/include/c++/13/set:
 
 /usr/include/c++/13/bits/shared_ptr_atomic.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-/usr/include/c++/13/bits/enable_special_members.h:
-
-/usr/include/stdint.h:
-
-/usr/include/endian.h:
-
-/usr/local/include/Geant4/CLHEP/Geometry/Transform3D.icc:
-
-/usr/local/include/Geant4/G4AttDef.hh:
-
-/usr/local/include/Geant4/G4Polycone.icc:
-
-/usr/local/include/Geant4/G4VDigi.hh:
-
-/usr/include/linux/limits.h:
-
-/usr/include/c++/13/ratio:
-
-/usr/local/include/Geant4/G4PhysicsVectorType.hh:
 
 /usr/local/include/Geant4/G4VUserDetectorConstruction.hh:
 
@@ -4537,11 +4525,9 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 
 /usr/local/include/Geant4/G4Orb.icc:
 
-/usr/include/c++/13/tr1/exp_integral.tcc:
-
-/usr/local/include/Geant4/CLHEP/Random/RandPoissonQ.icc:
-
 /usr/include/c++/13/ctime:
+
+/usr/include/c++/13/bits/memoryfwd.h:
 
 /usr/local/include/Geant4/G4SingleParticleSource.hh:
 
@@ -4562,6 +4548,10 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 /usr/local/include/Geant4/G4VPhysicalVolume.hh:
 
 /usr/local/include/Geant4/G4PhysicalVolumeModel.hh:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/c++/13/bits/stl_relops.h:
 
@@ -4601,8 +4591,6 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 
 /usr/include/c++/13/bits/localefwd.h:
 
-/usr/local/include/Geant4/G4RNGHelper.hh:
-
 /usr/local/include/Geant4/G4Sphere.hh:
 
 /usr/include/c++/13/climits:
@@ -4619,6 +4607,8 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 
 /home/qiqi/geant4/The-Battery-eta/include/PhysicsList.hh:
 
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
 /usr/local/include/Geant4/G4UImessenger.hh:
 
 /usr/include/c++/13/bits/cpp_type_traits.h:
@@ -4632,14 +4622,6 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 /usr/include/c++/13/bits/locale_conv.h:
 
 /usr/include/c++/13/bits/istream.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/local/include/Geant4/G4SubEvent.hh:
-
-/usr/include/c++/13/bits/deque.tcc:
 
 /usr/include/c++/13/backward/auto_ptr.h:
 
@@ -4721,6 +4703,10 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 
 /usr/local/include/Geant4/G4ExceptionSeverity.hh:
 
+/usr/include/c++/13/ext/type_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/time64.h:
+
 /usr/include/c++/13/bits/basic_ios.h:
 
 /usr/include/c++/13/bits/shared_ptr_base.h:
@@ -4793,21 +4779,9 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 
 /usr/local/include/Geant4/CLHEP/Random/Random.icc:
 
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/c++/13/bits/requires_hosted.h:
-
-/usr/local/include/Geant4/G4TrackStack.hh:
-
-/usr/local/include/Geant4/G4ParticleDefinition.icc:
-
-/usr/include/c++/13/bits/stl_queue.h:
-
 /usr/include/c++/13/bits/char_traits.h:
 
 /usr/include/c++/13/bits/std_function.h:
-
-/usr/include/c++/13/queue:
 
 /usr/local/include/Geant4/G4Material.hh:
 
@@ -4818,8 +4792,6 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 /usr/local/include/Geant4/G4SurfBits.hh:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/c++/13/bits/memoryfwd.h:
 
 /usr/include/c++/13/bits/move.h:
 
@@ -4859,8 +4831,6 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 
 /usr/include/c++/13/bits/locale_facets.tcc:
 
-/usr/local/include/Geant4/G4AutoLock.hh:
-
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/local/include/Geant4/G4RayTracer.hh:
@@ -4891,9 +4861,9 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 
 /usr/local/include/Geant4/G4PhysicsVector.icc:
 
-/usr/include/c++/13/cstdint:
-
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/local/include/Geant4/G4RunManagerKernel.hh:
 
 /usr/include/c++/13/bits/postypes.h:
 
@@ -4930,6 +4900,8 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 /usr/local/include/Geant4/G4UIparameter.hh:
 
 /usr/local/include/Geant4/G4Region.hh:
+
+/usr/local/include/Geant4/G4RegularNavigation.hh:
 
 /usr/local/include/Geant4/G4SPSAngDistribution.hh:
 
@@ -4979,10 +4951,6 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 
 /usr/include/c++/13/bits/unordered_map.h:
 
-/usr/local/include/Geant4/G4ReplicaNavigation.hh:
-
-/usr/include/c++/13/bits/align.h:
-
 /usr/include/c++/13/bits/unique_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
@@ -4992,6 +4960,10 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 /usr/include/c++/13/bits/atomic_base.h:
 
 /usr/include/c++/13/bits/uses_allocator_args.h:
+
+/usr/include/c++/13/bits/align.h:
+
+/usr/local/include/Geant4/G4ReplicaNavigation.hh:
 
 /usr/include/c++/13/tr1/beta_function.tcc:
 
@@ -5013,8 +4985,6 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 
 /usr/include/c++/13/ext/atomicity.h:
 
-/usr/include/c++/13/deque:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/local/include/Geant4/G4Para.icc:
@@ -5022,6 +4992,8 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 /usr/local/include/Geant4/G4VSolid.icc:
 
 /usr/include/c++/13/cctype:
+
+/usr/include/c++/13/cstdint:
 
 /usr/include/c++/13/stdexcept:
 
@@ -5036,12 +5008,6 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 /usr/include/c++/13/cmath:
 
 /usr/local/include/Geant4/CLHEP/Random/RandBreitWigner.h:
-
-/usr/include/c++/13/ext/type_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/local/include/Geant4/CLHEP/Random/RandStudentT.icc:
 
@@ -5257,14 +5223,6 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 
 /usr/local/include/Geant4/CLHEP/Random/RandGaussQ.h:
 
-/usr/local/include/Geant4/G4RunManager.hh:
-
-/usr/include/limits.h:
-
-/usr/include/c++/13/cstdlib:
-
-/usr/local/include/Geant4/CLHEP/Random/RandGaussQ.icc:
-
 /usr/local/include/Geant4/G4PhysicsTable.icc:
 
 /usr/local/include/Geant4/G4ModelingParameters.hh:
@@ -5291,6 +5249,10 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 
 /usr/local/include/Geant4/CLHEP/Random/RandPoissonQ.h:
 
+/usr/include/c++/13/tr1/exp_integral.tcc:
+
+/usr/local/include/Geant4/CLHEP/Random/RandPoissonQ.icc:
+
 /usr/local/include/Geant4/CLHEP/Random/RandomEngine.h:
 
 /usr/local/include/Geant4/CLHEP/Random/Ranlux64Engine.h:
@@ -5310,8 +5272,6 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 /usr/local/include/Geant4/CLHEP/Random/RandBit.h:
 
 /usr/local/include/Geant4/CLHEP/Utility/memory.h:
-
-/usr/local/include/Geant4/G4MTBarrier.hh:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
@@ -5371,13 +5331,13 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 
 /usr/local/include/Geant4/G4AttValue.hh:
 
+/usr/local/include/Geant4/G4AutoLock.hh:
+
 /usr/local/include/Geant4/G4AuxiliaryNavServices.hh:
 
 /usr/include/c++/13/limits:
 
 /usr/local/include/Geant4/G4Navigator.icc:
-
-/usr/include/c++/13/bits/stl_deque.h:
 
 /usr/local/include/Geant4/G4AuxiliaryNavServices.icc:
 
@@ -5444,8 +5404,6 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 /usr/local/include/Geant4/G4LogicalVolume.icc:
 
 /usr/local/include/Geant4/G4LorentzVector.hh:
-
-/usr/local/include/Geant4/G4MTRunManager.hh:
 
 /usr/local/include/Geant4/CLHEP/Vector/AxisAngle.h:
 
@@ -5551,6 +5509,8 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 
 /usr/local/include/Geant4/G4PhysicsVector.hh:
 
+/usr/local/include/Geant4/G4PhysicsVectorType.hh:
+
 /usr/local/include/Geant4/G4NavigationHistory.icc:
 
 /usr/local/include/Geant4/G4Point3D.hh:
@@ -5584,3 +5544,19 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 /usr/local/include/Geant4/G4PseudoScene.hh:
 
 /usr/local/include/Geant4/G4Region.icc:
+
+/usr/local/include/Geant4/G4ReplicaNavigation.icc:
+
+/usr/local/include/Geant4/G4RotationMatrix.hh:
+
+/usr/include/limits.h:
+
+/usr/include/c++/13/cstdlib:
+
+/usr/local/include/Geant4/CLHEP/Random/RandGaussQ.icc:
+
+/usr/local/include/Geant4/G4RunManager.hh:
+
+/usr/local/include/Geant4/G4SandiaTable.hh:
+
+/usr/local/include/Geant4/G4Scene.hh:

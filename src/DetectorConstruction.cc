@@ -8,7 +8,9 @@
 #include "DetectorConstruction.hh"
 #include "G4VisAttributes.hh"
 
-DetectorConstruction :: DetectorConstruction() :G4VUserDetectorConstruction()
+DetectorConstruction :: DetectorConstruction() :G4VUserDetectorConstruction(),
+    Ni_Z(0.25*um),
+    Sic_Z(310.3*um)
 {
 
 }
@@ -48,7 +50,6 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     //Ni
     G4double Ni_X = 1*cm;
     G4double Ni_Y = 1*cm;
-    G4double Ni_Z = 0.25*um;
 
     G4Box* SolidNi = new G4Box ("Ni",Ni_X/2,Ni_Y/2,Ni_Z/2);
     G4LogicalVolume* LogicalNi = new G4LogicalVolume (SolidNi,NiMat,"LogicalNi");
@@ -57,7 +58,6 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     //Sic
     G4double Sic_X = 1*cm;
     G4double Sic_Y = 1*cm;
-    G4double Sic_Z = 310.3*um;
     
 
     G4Box *SolidSic = new G4Box ("Sic",Sic_X/2,Sic_Y/2,Sic_Z/2);
