@@ -9,7 +9,7 @@
 #include "G4VisAttributes.hh"
 
 DetectorConstruction :: DetectorConstruction() :G4VUserDetectorConstruction(),
-    Ni_Z(0.25*um),
+    Ni_Z(1.5 *um),
     Sic_Z(20*um)
 {
 
