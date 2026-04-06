@@ -1,5 +1,4 @@
-
-/detector/setNiThickness 1.5 um
+/detector/setNiThickness 0.25 um
 
 /detector/print
 

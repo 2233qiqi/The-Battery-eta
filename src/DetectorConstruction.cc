@@ -6,18 +6,24 @@
 #include "G4PVPlacement.hh"
 #include "G4SystemOfUnits.hh"
 #include "DetectorConstruction.hh"
+#include "DetectorMessenger.hh"
 #include "G4VisAttributes.hh"
+#include "G4UImanager.hh"
+#include "G4RunManager.hh"
+#include <sstream>
 
 DetectorConstruction :: DetectorConstruction() :G4VUserDetectorConstruction(),
+    fMessenger(nullptr),
     Ni_Z(0.25 *um),
-    Sic_Z(20*um)
+    Sic_Z(20*um),
+    fSourceHalfZ(0.25 *um)
 {
-
+    fMessenger = new DetectorMessenger(this);
 }
 
 DetectorConstruction :: ~DetectorConstruction()
 {
-
+    delete fMessenger;
 }
 
 G4VPhysicalVolume* DetectorConstruction ::Construct()
@@ -58,7 +64,7 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     //Sic
     G4double Sic_X = 1*cm;
     G4double Sic_Y = 1*cm;
-    
+
 
     G4Box *SolidSic = new G4Box ("Sic",Sic_X/2,Sic_Y/2,Sic_Z/2);
     G4LogicalVolume* LogicalVolumeSic = new G4LogicalVolume(SolidSic,Sic,"LogicalSic");
@@ -74,6 +80,27 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     
     return PhysicalWorld;
 
+}
+
+void DetectorConstruction::SetNiThickness(G4double val)
+{
+    Ni_Z = val;
+    fSourceHalfZ = val;  // auto-sync source half-z to match Ni thickness
+}
+
+void DetectorConstruction::SetSicThickness(G4double val)
+{
+    Sic_Z = val;
+}
+
+void DetectorConstruction::SetSourceHalfZ(G4double val)
+{
+    fSourceHalfZ = val;
+}
+
+void DetectorConstruction::UpdateGeometry()
+{
+    G4RunManager::GetRunManager()->ReinitializeGeometry();
 }
 
 

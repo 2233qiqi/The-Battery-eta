@@ -68,10 +68,7 @@ void RunAction::AddInitialParticleEnergy(G4double energy)
 
 void RunAction::EndOfRunAction(const G4Run*)
 {
-    G4cout << " 总粒子数:                 " << fTotalParticles << G4endl;
     G4cout << " 进入SiC的粒子数:          " << fEnteredSiC << G4endl;
- 
-    
     if (fTotalParticles > 0)
     {
         G4cout << " 进入效率:                 " << (G4double)fEnteredSiC/fTotalParticles*100. << " %" << G4endl;

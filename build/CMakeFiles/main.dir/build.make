@@ -111,10 +111,24 @@ CMakeFiles/main.dir/src/DetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/DetectorConstruction.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiqi/geant4/The-Battery-eta/src/DetectorConstruction.cc -o CMakeFiles/main.dir/src/DetectorConstruction.cc.s
 
+CMakeFiles/main.dir/src/DetectorMessenger.cc.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/DetectorMessenger.cc.o: /home/qiqi/geant4/The-Battery-eta/src/DetectorMessenger.cc
+CMakeFiles/main.dir/src/DetectorMessenger.cc.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qiqi/geant4/The-Battery-eta/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/DetectorMessenger.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/DetectorMessenger.cc.o -MF CMakeFiles/main.dir/src/DetectorMessenger.cc.o.d -o CMakeFiles/main.dir/src/DetectorMessenger.cc.o -c /home/qiqi/geant4/The-Battery-eta/src/DetectorMessenger.cc
+
+CMakeFiles/main.dir/src/DetectorMessenger.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/DetectorMessenger.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qiqi/geant4/The-Battery-eta/src/DetectorMessenger.cc > CMakeFiles/main.dir/src/DetectorMessenger.cc.i
+
+CMakeFiles/main.dir/src/DetectorMessenger.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/DetectorMessenger.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qiqi/geant4/The-Battery-eta/src/DetectorMessenger.cc -o CMakeFiles/main.dir/src/DetectorMessenger.cc.s
+
 CMakeFiles/main.dir/src/EventAction.cc.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/qiqi/geant4/The-Battery-eta/src/EventAction.cc
 CMakeFiles/main.dir/src/EventAction.cc.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qiqi/geant4/The-Battery-eta/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/EventAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qiqi/geant4/The-Battery-eta/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/EventAction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/EventAction.cc.o -MF CMakeFiles/main.dir/src/EventAction.cc.o.d -o CMakeFiles/main.dir/src/EventAction.cc.o -c /home/qiqi/geant4/The-Battery-eta/src/EventAction.cc
 
 CMakeFiles/main.dir/src/EventAction.cc.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/main.dir/src/EventAction.cc.s: cmake_force
 CMakeFiles/main.dir/src/PhysicsList.cc.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/PhysicsList.cc.o: /home/qiqi/geant4/The-Battery-eta/src/PhysicsList.cc
 CMakeFiles/main.dir/src/PhysicsList.cc.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qiqi/geant4/The-Battery-eta/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/PhysicsList.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qiqi/geant4/The-Battery-eta/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/PhysicsList.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/PhysicsList.cc.o -MF CMakeFiles/main.dir/src/PhysicsList.cc.o.d -o CMakeFiles/main.dir/src/PhysicsList.cc.o -c /home/qiqi/geant4/The-Battery-eta/src/PhysicsList.cc
 
 CMakeFiles/main.dir/src/PhysicsList.cc.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/main.dir/src/PhysicsList.cc.s: cmake_force
 CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.o: /home/qiqi/geant4/The-Battery-eta/src/PrimaryGeneratorAction.cc
 CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qiqi/geant4/The-Battery-eta/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qiqi/geant4/The-Battery-eta/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.o -MF CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.o.d -o CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.o -c /home/qiqi/geant4/The-Battery-eta/src/PrimaryGeneratorAction.cc
 
 CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.s: cmake_force
 CMakeFiles/main.dir/src/RunAction.cc.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/qiqi/geant4/The-Battery-eta/src/RunAction.cc
 CMakeFiles/main.dir/src/RunAction.cc.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qiqi/geant4/The-Battery-eta/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/src/RunAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qiqi/geant4/The-Battery-eta/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/src/RunAction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/RunAction.cc.o -MF CMakeFiles/main.dir/src/RunAction.cc.o.d -o CMakeFiles/main.dir/src/RunAction.cc.o -c /home/qiqi/geant4/The-Battery-eta/src/RunAction.cc
 
 CMakeFiles/main.dir/src/RunAction.cc.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/main.dir/src/RunAction.cc.s: cmake_force
 CMakeFiles/main.dir/src/SteppingAction.cc.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/src/SteppingAction.cc
 CMakeFiles/main.dir/src/SteppingAction.cc.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qiqi/geant4/The-Battery-eta/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/src/SteppingAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qiqi/geant4/The-Battery-eta/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/src/SteppingAction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/SteppingAction.cc.o -MF CMakeFiles/main.dir/src/SteppingAction.cc.o.d -o CMakeFiles/main.dir/src/SteppingAction.cc.o -c /home/qiqi/geant4/The-Battery-eta/src/SteppingAction.cc
 
 CMakeFiles/main.dir/src/SteppingAction.cc.i: cmake_force
@@ -186,6 +200,7 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/main.cc.o" \
 "CMakeFiles/main.dir/src/ActionInitialization.cc.o" \
 "CMakeFiles/main.dir/src/DetectorConstruction.cc.o" \
+"CMakeFiles/main.dir/src/DetectorMessenger.cc.o" \
 "CMakeFiles/main.dir/src/EventAction.cc.o" \
 "CMakeFiles/main.dir/src/PhysicsList.cc.o" \
 "CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.o" \
@@ -198,6 +213,7 @@ main_EXTERNAL_OBJECTS =
 main: CMakeFiles/main.dir/main.cc.o
 main: CMakeFiles/main.dir/src/ActionInitialization.cc.o
 main: CMakeFiles/main.dir/src/DetectorConstruction.cc.o
+main: CMakeFiles/main.dir/src/DetectorMessenger.cc.o
 main: CMakeFiles/main.dir/src/EventAction.cc.o
 main: CMakeFiles/main.dir/src/PhysicsList.cc.o
 main: CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.o
@@ -243,7 +259,7 @@ main: /usr/local/lib/libG4global.so
 main: /usr/local/lib/libG4clhep.so
 main: /usr/local/lib/libG4ptl.so.3.0.0
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/qiqi/geant4/The-Battery-eta/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/qiqi/geant4/The-Battery-eta/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
