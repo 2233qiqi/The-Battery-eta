@@ -85,7 +85,7 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
 void DetectorConstruction::SetNiThickness(G4double val)
 {
     Ni_Z = val;
-    fSourceHalfZ = val;  // auto-sync source half-z to match Ni thickness
+    fSourceHalfZ = val;  
 }
 
 void DetectorConstruction::SetSicThickness(G4double val)

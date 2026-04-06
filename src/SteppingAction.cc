@@ -42,7 +42,6 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
             fRunAction->AddEnergyInNi(edepNi);
             
             G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
-            analysisManager->FillH1(1, edepNi);
         }
     }
 

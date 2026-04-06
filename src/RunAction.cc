@@ -10,10 +10,8 @@ RunAction::RunAction(): G4UserRunAction(),fEnteredSiC(0),fTotalParticles(0),fTot
     analysisManager->SetFileName("DepositionData");
     analysisManager->SetDefaultFileType("root");
 
-    analysisManager->CreateH1("Edep_vs_depth", "Energy deposition vs depth in SiC", 100, 0.0, 310.3*um);
-    
-    analysisManager->CreateH1("Edep_Ni", "Energy loss in Ni layer", 100, 0.0, 3.0*MeV);
-    
+    analysisManager->CreateH1("Edep_vs_depth", "Energy deposition vs depth in SiC", 100, 0.0, 14*um);
+
     analysisManager->CreateNtuple("EventData", "Event summary data");
     analysisManager->CreateNtupleIColumn("EventID");
     analysisManager->CreateNtupleIColumn("ParticleCrossedNi");

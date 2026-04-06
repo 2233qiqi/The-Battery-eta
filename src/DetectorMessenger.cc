@@ -53,7 +53,6 @@ void DetectorMessenger::SetNewValue(G4UIcommand* command, G4String newValue)
     {
         G4double val = fNiThicknessCmd->GetNewDoubleValue(newValue);
         fDetector->SetNiThickness(val);
-        // Also update GPS source half-z to match Ni thickness
         std::ostringstream cmd;
         cmd << "/gps/pos/halfz " << val/um << " um";
         UI->ApplyCommand(cmd.str());
@@ -71,14 +70,5 @@ void DetectorMessenger::SetNewValue(G4UIcommand* command, G4String newValue)
         cmd << "/gps/pos/halfz " << val/um << " um";
         UI->ApplyCommand(cmd.str());
     }
-    else if (command == fPrintCmd)
-    {
-        G4cout << G4endl;
-        G4cout << "=== Detector Geometry Parameters ===" << G4endl;
-        G4cout << "  Ni Thickness:       " << fDetector->GetNiThickness()/um << " um" << G4endl;
-        G4cout << "  SiC Thickness:      " << fDetector->GetSicThickness()/um << " um" << G4endl;
-        G4cout << "  Source Half-Z:      " << fDetector->GetSourceHalfZ()/um << " um" << G4endl;
-        G4cout << "====================================" << G4endl;
-        G4cout << G4endl;
-    }
+    
 }
