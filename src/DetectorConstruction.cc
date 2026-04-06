@@ -16,6 +16,7 @@ DetectorConstruction :: DetectorConstruction() :G4VUserDetectorConstruction(),
     fMessenger(nullptr),
     Ni_Z(0.25 *um),
     Sic_Z(20*um),
+    Ti_Z(100*um),
     fSourceHalfZ(0.25 *um)
 {
     fMessenger = new DetectorMessenger(this);
@@ -34,6 +35,7 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     G4NistManager* nist = G4NistManager::Instance();
     auto *WorldMat = nist ->FindOrBuildMaterial("G4_AIR");
     auto *NiMat = nist ->FindOrBuildMaterial("G4_Ni");
+    auto *TiMat = nist ->FindOrBuildMaterial("G4_Ti");
     auto *SiMat = nist ->FindOrBuildElement("Si");
     auto *CMat = nist -> FindOrBuildElement("C");
 
@@ -61,6 +63,16 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     G4LogicalVolume* LogicalNi = new G4LogicalVolume (SolidNi,NiMat,"LogicalNi");
     G4VPhysicalVolume* PhysicalNi  = new G4PVPlacement(0,G4ThreeVector(0,0,0),LogicalNi,"PhysicalNi",LogicalWorld,false,0,true);
 
+    //Ti 
+    G4double Ti_X = 1*cm;
+    G4double Ti_Y = 1*cm;
+
+    G4Box* SolidTi = new G4Box ("Ti",Ti_X/2,Ti_Y/2,Ti_Z/2);
+    G4LogicalVolume* LogicalTi = new G4LogicalVolume (SolidTi,TiMat,"LogicalTi");
+  
+    G4double TiZPosition = -(Ni_Z/2.0 + Ti_Z/2.0);
+    G4VPhysicalVolume* PhysicalTi  = new G4PVPlacement(0,G4ThreeVector(0,0,TiZPosition),LogicalTi,"PhysicalTi",LogicalWorld,false,0,true);
+
     //Sic
     G4double Sic_X = 1*cm;
     G4double Sic_Y = 1*cm;
@@ -74,6 +86,11 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     G4VisAttributes* Ni_VisAtt = new G4VisAttributes(G4Color(1.0,0.0,0.0,0.7));
     Ni_VisAtt ->SetForceSolid(true);
     LogicalNi ->SetVisAttributes(Ni_VisAtt);
+    
+    G4VisAttributes* Ti_VisAtt = new G4VisAttributes(G4Color(0.5,0.5,0.5,0.7));
+    Ti_VisAtt ->SetForceSolid(true);
+    LogicalTi ->SetVisAttributes(Ti_VisAtt);
+    
     G4VisAttributes* Sic_VisAtt = new G4VisAttributes(G4Color(0.0,1.0,0.0,0.7));
     Sic_VisAtt ->SetForceSolid(true);
     LogicalVolumeSic ->SetVisAttributes(Sic_VisAtt);
@@ -85,12 +102,17 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
 void DetectorConstruction::SetNiThickness(G4double val)
 {
     Ni_Z = val;
-    fSourceHalfZ = val;  
+    fSourceHalfZ = val;
 }
 
 void DetectorConstruction::SetSicThickness(G4double val)
 {
     Sic_Z = val;
+}
+
+void DetectorConstruction::SetTiThickness(G4double val)
+{
+    Ti_Z = val;
 }
 
 void DetectorConstruction::SetSourceHalfZ(G4double val)

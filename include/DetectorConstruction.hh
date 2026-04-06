@@ -18,11 +18,13 @@ class DetectorConstruction : public G4VUserDetectorConstruction
     // Getters
     G4double GetNiThickness() const { return Ni_Z; }
     G4double GetSicThickness() const { return Sic_Z; }
+    G4double GetTiThickness() const { return Ti_Z; }
     G4double GetSourceHalfZ() const { return fSourceHalfZ; }
 
     // Setters (called by messenger or directly in code)
     void SetNiThickness(G4double val);
     void SetSicThickness(G4double val);
+    void SetTiThickness(G4double val);
     void SetSourceHalfZ(G4double val);
 
     void UpdateGeometry();  // rebuild geometry after parameter change
@@ -33,6 +35,7 @@ class DetectorConstruction : public G4VUserDetectorConstruction
     G4LogicalVolume* fLogicGeCrystal;
     G4double Ni_Z;
     G4double Sic_Z;
+    G4double Ti_Z;
     G4double fSourceHalfZ;  // source half-z, synced with Ni thickness
 };
 
