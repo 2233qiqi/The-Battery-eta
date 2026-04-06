@@ -12,8 +12,6 @@ if not h:
     print("没找到直方图，请检查名字")
     exit()
 
-# 设置粒子数（根据 run.mac 中的 /run/beamOn）
-NUM_PARTICLES = 10000
 
 # 写 CSV
 with open("sic_energy.csv", "w", newline="") as file:
@@ -22,7 +20,7 @@ with open("sic_energy.csv", "w", newline="") as file:
 
     for i in range(1, h.GetNbinsX() + 1):
         thickness = h.GetBinCenter(i)
-        energy    = h.GetBinContent(i) / NUM_PARTICLES  # 归一化到单个粒子
+        energy    = h.GetBinContent(i) 
 
         writer.writerow([thickness, energy])
 
