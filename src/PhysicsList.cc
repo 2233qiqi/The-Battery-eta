@@ -26,11 +26,6 @@ PhysicsList ::PhysicsList()
     RegisterPhysics(new G4IonPhysics());
 
     RegisterPhysics(new G4NeutronTrackingCut());
-
-    SetCutValue(0.01 * um, "e-");
-    SetCutValue(0.1 * um, "e+");
-    SetCutValue(0.1 * um, "gamma");
-    SetCutValue(0.1 * um, "proton");
 }
 
 PhysicsList ::~PhysicsList()
