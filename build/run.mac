@@ -1,9 +1,9 @@
 
 /detector/setNiThickness 1 um
 
-/detector/print
-
 /run/initialize
+
+/detector/print
 
 /gps/pos/type Volume
 /gps/pos/shape Para
@@ -92,4 +92,4 @@
 /gps/hist/inter Spline
 
 /gps/number 1
-/run/beamOn 1000000
+/run/beamOn 100000

@@ -275,7 +275,7 @@ CMakeFiles/main.dir/src/PhysicsList.cc.o: \
  /usr/local/include/Geant4/G4GeomSplitter.hh \
  /usr/local/include/Geant4/geomwdefs.hh \
  /usr/local/include/Geant4/G4Region.icc \
- /usr/local/include/Geant4/G4EmStandardPhysics_option4.hh \
+ /usr/local/include/Geant4/G4EmLivermorePhysics.hh \
  /usr/local/include/Geant4/G4EmExtraPhysics.hh \
  /usr/local/include/Geant4/G4EmMessenger.hh \
  /usr/local/include/Geant4/G4UImessenger.hh \
@@ -448,4 +448,6 @@ CMakeFiles/main.dir/src/PhysicsList.cc.o: \
  /usr/local/include/Geant4/G4RadioactiveDecayPhysics.hh \
  /usr/local/include/Geant4/G4StoppingPhysics.hh \
  /usr/local/include/Geant4/G4IonPhysics.hh \
- /usr/local/include/Geant4/G4NeutronTrackingCut.hh
+ /usr/local/include/Geant4/G4NeutronTrackingCut.hh \
+ /usr/local/include/Geant4/G4ProductionCutsTable.hh \
+ /usr/local/include/Geant4/G4SystemOfUnits.hh

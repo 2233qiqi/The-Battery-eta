@@ -2985,8 +2985,8 @@ CMakeFiles/main.dir/src/PhysicsList.cc.o: /home/qiqi/geant4/The-Battery-eta/src/
   /usr/local/include/Geant4/G4ElementTable.hh \
   /usr/local/include/Geant4/G4ElementVector.hh \
   /usr/local/include/Geant4/G4EmExtraPhysics.hh \
+  /usr/local/include/Geant4/G4EmLivermorePhysics.hh \
   /usr/local/include/Geant4/G4EmMessenger.hh \
-  /usr/local/include/Geant4/G4EmStandardPhysics_option4.hh \
   /usr/local/include/Geant4/G4EnvironmentUtils.hh \
   /usr/local/include/Geant4/G4Exception.hh \
   /usr/local/include/Geant4/G4ExceptionSeverity.hh \
@@ -3056,6 +3056,7 @@ CMakeFiles/main.dir/src/PhysicsList.cc.o: /home/qiqi/geant4/The-Battery-eta/src/
   /usr/local/include/Geant4/G4StoppingPhysics.hh \
   /usr/local/include/Geant4/G4String.hh \
   /usr/local/include/Geant4/G4String.icc \
+  /usr/local/include/Geant4/G4SystemOfUnits.hh \
   /usr/local/include/Geant4/G4ThreadLocalSingleton.hh \
   /usr/local/include/Geant4/G4Threading.hh \
   /usr/local/include/Geant4/G4ThreeVector.hh \
@@ -4538,8 +4539,6 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 
 /usr/local/include/Geant4/G4GeneralParticleSource.hh:
 
-/usr/local/include/Geant4/G4EmStandardPhysics_option4.hh:
-
 /usr/local/include/Geant4/G4DataInterpolation.hh:
 
 /home/qiqi/geant4/The-Battery-eta/include/PrimaryGeneratorAction.hh:
@@ -5029,6 +5028,8 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/qiqi/geant4/The-Battery-eta/s
 /usr/local/include/Geant4/G4Fcn.hh:
 
 /usr/include/c++/13/bits/locale_facets_nonio.tcc:
+
+/usr/local/include/Geant4/G4EmLivermorePhysics.hh:
 
 /usr/include/c++/13/bits/locale_facets_nonio.h:
 
