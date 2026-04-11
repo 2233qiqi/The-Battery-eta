@@ -34,7 +34,7 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
 
     G4NistManager* nist = G4NistManager::Instance();
     auto *WorldMat = nist ->FindOrBuildMaterial("G4_AIR");
-    auto *NiMat = nist ->FindOrBuildMaterial("G4_Sr");
+    auto *NiMat = nist ->FindOrBuildMaterial("G4_Ni");
     auto *TiMat = nist ->FindOrBuildMaterial("G4_Ti");
     auto *SiMat = nist ->FindOrBuildElement("Si");
     auto *CMat = nist -> FindOrBuildElement("C");
@@ -63,7 +63,7 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     G4LogicalVolume* LogicalNi = new G4LogicalVolume (SolidNi,NiMat,"LogicalNi");
     G4VPhysicalVolume* PhysicalNi  = new G4PVPlacement(0,G4ThreeVector(0,0,0),LogicalNi,"PhysicalNi",LogicalWorld,false,0,true);
 
-    /*
+    
     //Ti 
     G4double Ti_X = 1*cm;
     G4double Ti_Y = 1*cm;
@@ -94,7 +94,7 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     
     G4VisAttributes* Sic_VisAtt = new G4VisAttributes(G4Color(0.0,1.0,0.0,0.7));
     Sic_VisAtt ->SetForceSolid(true);
-    LogicalVolumeSic ->SetVisAttributes(Sic_VisAtt);*/
+    LogicalVolumeSic ->SetVisAttributes(Sic_VisAtt);
     
     return PhysicalWorld;
 

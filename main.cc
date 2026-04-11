@@ -23,7 +23,7 @@ int main(int argc, char** argv)
 
     auto* UImanager = G4UImanager::GetUIpointer();
 
-    UImanager->ApplyCommand("/control/execute runsr.mac");
+    UImanager->ApplyCommand("/control/execute run.mac");
 
     ui->SessionStart();
 
