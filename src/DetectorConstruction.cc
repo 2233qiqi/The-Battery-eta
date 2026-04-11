@@ -14,7 +14,6 @@
 
 DetectorConstruction :: DetectorConstruction() :G4VUserDetectorConstruction(),
     fMessenger(nullptr),
-    Ni_Z(0.25 *um),
     Sic_Z(20*um),
     Ti_Z(100*um),
     fSourceHalfZ(0.25 *um)
