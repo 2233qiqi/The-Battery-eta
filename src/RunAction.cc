@@ -78,8 +78,8 @@ void RunAction::EndOfRunAction(const G4Run*)
     
     if (fTotalInitialEnergy > 0.)
     {
-        G4double sicRatio = fTotalEnergySiC / fTotalInitialEnergy * 100.;
-        G4cout << " SiC能量与总能量比:       " << sicRatio << " %" << G4endl;
+        G4double NiRatio = fTotalEnergyNi / fTotalInitialEnergy * 100.;
+        G4cout << " Ni自吸收率:       " << NiRatio << " %" << G4endl;
     }
        
     G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();

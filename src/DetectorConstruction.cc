@@ -63,7 +63,7 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     G4LogicalVolume* LogicalNi = new G4LogicalVolume (SolidNi,NiMat,"LogicalNi");
     G4VPhysicalVolume* PhysicalNi  = new G4PVPlacement(0,G4ThreeVector(0,0,0),LogicalNi,"PhysicalNi",LogicalWorld,false,0,true);
 
-    
+ 
     //Ti 
     G4double Ti_X = 1*cm;
     G4double Ti_Y = 1*cm;
