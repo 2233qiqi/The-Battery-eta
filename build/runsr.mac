@@ -1,5 +1,5 @@
 
-/detector/setNiThickness 1000 um
+/detector/setNiThickness 100 um
 
 /detector/print
 
@@ -57,4 +57,4 @@
 /gps/hist/inter Spline
 
 /gps/number 1
-/run/beamOn 10000
+/run/beamOn 1000000
