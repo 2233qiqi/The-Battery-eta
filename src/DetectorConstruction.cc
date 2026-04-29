@@ -96,7 +96,7 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     
     G4VisAttributes* Sic_VisAtt = new G4VisAttributes(G4Color(0.0,1.0,0.0,0.7));
     Sic_VisAtt ->SetForceSolid(true);
-   // LogicalVolumeSic ->SetVisAttributes(Sic_VisAtt);
+    LogicalVolumeSic ->SetVisAttributes(Sic_VisAtt);
     
     return PhysicalWorld;
 
