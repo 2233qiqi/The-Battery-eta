@@ -75,6 +75,7 @@ void RunAction::EndOfRunAction(const G4Run*)
     G4cout << " 总初始粒子能量:           " << fTotalInitialEnergy/MeV << " MeV" << G4endl;
     G4cout << " Ni层总能量损失:           " << fTotalEnergyNi/MeV << " MeV" << G4endl;
     G4cout << " SiC层总能量沉积:          " << fTotalEnergySiC/MeV << " MeV" << G4endl;
+
     
     if (fTotalInitialEnergy > 0.)
     {

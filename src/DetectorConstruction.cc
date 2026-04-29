@@ -16,7 +16,7 @@ DetectorConstruction :: DetectorConstruction() :G4VUserDetectorConstruction(),
     fMessenger(nullptr),
     Sic_Z(100*um),
     Ti_Z(100*um),
-    fSourceHalfZ(0.25 *um)
+    fSourceHalfZ(100 *um)
 {
     fMessenger = new DetectorMessenger(this);
 }
@@ -32,8 +32,8 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     G4bool checkOverlaps = true;
 
     G4NistManager* nist = G4NistManager::Instance();
-    auto *WorldMat = nist ->FindOrBuildMaterial("G4_AIR");
-    auto *NiMat = nist ->FindOrBuildMaterial("G4_Ni");
+    auto *WorldMat = nist ->FindOrBuildMaterial("G4_Galactic");
+    auto *NiMat = nist ->FindOrBuildMaterial("G4_Sr");
     auto *TiMat = nist ->FindOrBuildMaterial("G4_Ti");
     auto *SiMat = nist ->FindOrBuildElement("Si");
     auto *CMat = nist -> FindOrBuildElement("C");
@@ -62,7 +62,7 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     G4LogicalVolume* LogicalNi = new G4LogicalVolume (SolidNi,NiMat,"LogicalNi");
     G4VPhysicalVolume* PhysicalNi  = new G4PVPlacement(0,G4ThreeVector(0,0,0),LogicalNi,"PhysicalNi",LogicalWorld,false,0,true);
 
- 
+
     //Ti 
     G4double Ti_X = 1*cm;
     G4double Ti_Y = 1*cm;
@@ -73,6 +73,7 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     G4double TiZPosition = -(Ni_Z/2.0 + Ti_Z/2.0);
     G4VPhysicalVolume* PhysicalTi  = new G4PVPlacement(0,G4ThreeVector(0,0,TiZPosition),LogicalTi,"PhysicalTi",LogicalWorld,false,0,true);
 
+
     //Sic
     G4double Sic_X = 1*cm;
     G4double Sic_Y = 1*cm;
@@ -81,6 +82,8 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     G4Box *SolidSic = new G4Box ("Sic",Sic_X/2,Sic_Y/2,Sic_Z/2);
     G4LogicalVolume* LogicalVolumeSic = new G4LogicalVolume(SolidSic,Sic,"LogicalSic");
     G4VPhysicalVolume *PhysicalSic = new G4PVPlacement (0,G4ThreeVector(0,0,(Ni_Z/2.0 + Sic_Z/2.0)),LogicalVolumeSic,"PhysicalSic",LogicalWorld,false,0,true);
+ 
+  
 
     //可视化
     G4VisAttributes* Ni_VisAtt = new G4VisAttributes(G4Color(1.0,0.0,0.0,0.7));
@@ -93,7 +96,7 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     
     G4VisAttributes* Sic_VisAtt = new G4VisAttributes(G4Color(0.0,1.0,0.0,0.7));
     Sic_VisAtt ->SetForceSolid(true);
-    LogicalVolumeSic ->SetVisAttributes(Sic_VisAtt);
+   // LogicalVolumeSic ->SetVisAttributes(Sic_VisAtt);
     
     return PhysicalWorld;
 
