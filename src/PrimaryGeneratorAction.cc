@@ -16,24 +16,26 @@ PrimaryGeneratorAction::PrimaryGeneratorAction(RunAction* runAction)
     fGPS = new G4GeneralParticleSource();
 }
 
-void PrimaryGeneratorAction::GeneratePrimaries(G4Event *event)
+   void PrimaryGeneratorAction::GeneratePrimaries(G4Event *event)
 {
-    // 统计粒子数
     if (fRunAction)
     {
         fRunAction->AddTotalParticles();
     }
-    
+
     fGPS->GeneratePrimaryVertex(event);
-    
-    // 获取粒子初始能量
-    if (event->GetNumberOfPrimaryVertex() > 0)
+
+    for (G4int iv = 0; iv < event->GetNumberOfPrimaryVertex(); ++iv)
     {
-        G4PrimaryParticle* particle = event->GetPrimaryVertex(0)->GetPrimary(0);
-        if (particle && fRunAction)
+        G4PrimaryVertex* vertex = event->GetPrimaryVertex(iv);
+        if (!vertex) continue;
+        for (G4int ip = 0; ip < vertex->GetNumberOfParticle(); ++ip)
         {
-            G4double kineticEnergy = particle->GetKineticEnergy();
-            fRunAction->AddInitialParticleEnergy(kineticEnergy);
+            G4PrimaryParticle* particle = vertex->GetPrimary(ip);
+            if (particle && fRunAction)
+            {
+                fRunAction->AddInitialParticleEnergy(particle->GetKineticEnergy());
+            }
         }
     }
 }
