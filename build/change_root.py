@@ -24,6 +24,3 @@ with open("sic_energy.csv", "w", newline="") as file:
 
         writer.writerow([thickness, energy])
 
-print(f"导出完成：sic_energy.csv")
-print(f"能量已根据 {NUM_PARTICLES} 个粒子进行归一化")
-print(f"输出单位：MeV/particle")

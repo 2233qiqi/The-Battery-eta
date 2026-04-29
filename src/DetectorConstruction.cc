@@ -32,11 +32,14 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     G4bool checkOverlaps = true;
 
     G4NistManager* nist = G4NistManager::Instance();
-    auto *WorldMat = nist ->FindOrBuildMaterial("G4_Galactic");
-    auto *NiMat = nist ->FindOrBuildMaterial("G4_Sr");
-    auto *TiMat = nist ->FindOrBuildMaterial("G4_Ti");
-    auto *SiMat = nist ->FindOrBuildElement("Si");
-    auto *CMat = nist -> FindOrBuildElement("C");
+    auto *WorldMat = nist->FindOrBuildMaterial("G4_Galactic");
+    auto *NiElement = nist->FindOrBuildElement("Ni");
+    G4double NiDensity = 1.27 * g/cm3;
+    G4Material *NiMat = new G4Material("NickelCustom", NiDensity, 1);
+    NiMat->AddElement(NiElement, 1);
+    auto *TiMat = nist->FindOrBuildMaterial("G4_Ti");
+    auto *SiMat = nist->FindOrBuildElement("Si");
+    auto *CMat = nist->FindOrBuildElement("C");
 
     //SIC matrial
     G4double density = 3.21 * g/cm3;
@@ -73,18 +76,14 @@ G4VPhysicalVolume* DetectorConstruction ::Construct()
     G4double TiZPosition = -(Ni_Z/2.0 + Ti_Z/2.0);
     G4VPhysicalVolume* PhysicalTi  = new G4PVPlacement(0,G4ThreeVector(0,0,TiZPosition),LogicalTi,"PhysicalTi",LogicalWorld,false,0,true);
 
-
- 
     //Sic
     G4double Sic_X = 1*cm;
     G4double Sic_Y = 1*cm;
-
 
     G4Box *SolidSic = new G4Box ("Sic",Sic_X/2,Sic_Y/2,Sic_Z/2);
     G4LogicalVolume* LogicalVolumeSic = new G4LogicalVolume(SolidSic,Sic,"LogicalSic");
     G4VPhysicalVolume *PhysicalSic = new G4PVPlacement (0,G4ThreeVector(0,0,(Ni_Z/2.0 + Sic_Z/2.0)),LogicalVolumeSic,"PhysicalSic",LogicalWorld,false,0,true);
  
-
     //可视化
     G4VisAttributes* Ni_VisAtt = new G4VisAttributes(G4Color(1.0,0.0,0.0,0.7));
     Ni_VisAtt ->SetForceSolid(true);
