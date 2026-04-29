@@ -2,6 +2,7 @@ import ROOT
 import numpy as np
 import matplotlib.pyplot as plt
 
+# ===== Plot style =====
 plt.rcParams.update({
     "font.family": "serif",
     "font.size": 12,
@@ -12,99 +13,95 @@ plt.rcParams.update({
     "ytick.right": True
 })
 
+# ===== Open ROOT =====
 f = ROOT.TFile("DepositionData.root")
 
-h_depth = f.Get("Edep_vs_depth")
-h_ni = f.Get("Edep_Ni")
+if not f or f.IsZombie():
+    raise RuntimeError("Cannot open ROOT file")
 
-nbins_depth = h_depth.GetNbinsX()
-nbins_ni = h_ni.GetNbinsX()
+print("\n===== ROOT content =====")
+f.ls()
+print("========================\n")
 
-x_depth = np.array([h_depth.GetBinCenter(i) for i in range(1, nbins_depth + 1)])
-y_depth = np.array([h_depth.GetBinContent(i) for i in range(1, nbins_depth + 1)])
+# ===== Get histogram =====
+h = f.Get("Edep_vs_depth")
 
-x_ni = np.array([h_ni.GetBinCenter(i) for i in range(1, nbins_ni + 1)])
-y_ni = np.array([h_ni.GetBinContent(i) for i in range(1, nbins_ni + 1)])
+if not h or not hasattr(h, "GetNbinsX"):
+    raise RuntimeError("Edep_vs_depth not found or invalid")
 
-W_SiC = 3.28e-6
-W_Ni = 3.8e-6
+# ===== Convert to numpy =====
+nbins = h.GetNbinsX()
 
-total_edep_sic = np.sum(y_depth)
-total_edep_ni = np.sum(y_ni)
+x = np.array([h.GetBinCenter(i) for i in range(1, nbins + 1)])
+y = np.array([h.GetBinContent(i) for i in range(1, nbins + 1)])
+bw = h.GetBinWidth(1)
 
-print("=" * 40)
-print("Betavoltaic Energy Deposition Analysis")
-print("=" * 40)
-print(f"SiC total energy deposition: {total_edep_sic:.4e} MeV")
-print(f"Ni total energy loss:        {total_edep_ni:.4e} MeV")
-print(f"Mean depth (SiC):            {np.average(x_depth, weights=y_depth):.3f} μm")
-print("=" * 40)
+# ===== Basic physics quantities =====
+total_edep = np.sum(y)
+mean_depth = np.average(x, weights=y) if total_edep > 0 else 0
 
-# ===== Figure 1: Deposition profiles =====
-fig, ax = plt.subplots(figsize=(6,5))
+print("=" * 45)
+print(" SiC Energy Deposition Analysis")
+print("=" * 45)
+print(f"Total energy deposition : {total_edep:.4e} MeV")
+print(f"Mean deposition depth  : {mean_depth:.3f} μm")
+print("=" * 45)
 
-ax.plot(
-    x_depth, y_depth,
-    color='black',
-    linewidth=1.2,
-    marker='s',
-    markersize=4,
-    label='SiC'
+# ===============================
+# Figure 1: Energy deposition vs depth
+# ===============================
+plt.figure(figsize=(6,5))
+
+plt.bar(
+    x - bw/2, y,
+    width=bw,
+    edgecolor='black',
+    linewidth=0.5
 )
 
-ax.plot(
-    x_ni, y_ni,
-    color='black',
-    linestyle='--',
-    linewidth=1.2,
-    marker='o',
-    markersize=4,
-    label='Ni'
-)
-
-ax.set_xlabel(r"Depth / Energy (arb. unit)")
-ax.set_ylabel(r"Energy Deposition (MeV)")
-ax.legend(frameon=False)
+plt.xlabel("Depth in SiC (μm)")
+plt.ylabel("Energy Deposition (MeV)")
 
 plt.tight_layout()
 plt.savefig("fig_profile.png", dpi=300)
 
-# ===== Figure 2: Normalized profile =====
+# ===============================
+# Figure 2: Normalized profile
+# ===============================
 plt.figure(figsize=(6,5))
 
-y_norm = y_depth / np.max(y_depth) if np.max(y_depth) > 0 else y_depth
+y_norm = y / np.max(y) if np.max(y) > 0 else y
 
-plt.plot(
-    x_depth, y_norm,
-    color='black',
-    linewidth=1.3,
-    marker='s',
-    markersize=4
+plt.bar(
+    x - bw/2, y_norm,
+    width=bw,
+    edgecolor='black',
+    linewidth=0.5
 )
 
-plt.xlabel(r"Depth in SiC ($\mu$m)")
-plt.ylabel(r"Normalized Energy Deposition")
+plt.xlabel("Depth in SiC (μm)")
+plt.ylabel("Normalized Energy Deposition")
 
 plt.tight_layout()
 plt.savefig("fig_normalized.png", dpi=300)
 
-# ===== Figure 3: CDF =====
+# ===============================
+# Figure 3: CDF
+# ===============================
 plt.figure(figsize=(6,5))
 
-cdf = np.cumsum(y_depth)
+cdf = np.cumsum(y)
 cdf = cdf / cdf[-1] if cdf[-1] > 0 else cdf
 
 plt.plot(
-    x_depth, cdf,
-    color='black',
-    linewidth=1.3,
+    x, cdf,
     marker='o',
+    linewidth=1.2,
     markersize=4
 )
 
-plt.xlabel(r"Depth in SiC ($\mu$m)")
-plt.ylabel(r"Cumulative Fraction")
-
+plt.xlabel("Depth in SiC (μm)")
+plt.ylabel("Cumulative Fraction")
 plt.ylim(0, 1.05)
 
 plt.tight_layout()
