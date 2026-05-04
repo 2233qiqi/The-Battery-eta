@@ -4,6 +4,8 @@
 #include "G4UserEventAction.hh"
 #include "globals.hh"
 
+class RunAction;
+
 class EventAction : public G4UserEventAction
 {
 public:
@@ -16,11 +18,16 @@ public:
     void SetEnteredSiC();          
     G4bool HasEnteredSiC() const; 
     
-    void AddEdep(G4double edep){ fTotalEdep += edep; }
+    void AddEdep(G4double edep) { fTotalEdep += edep; }
+    void AddEdepNi(G4double edep) { fTotalEdepNi += edep; }
+
+    G4double GetTotalEdep() const { return fTotalEdep; }
+    G4double GetTotalEdepNi() const { return fTotalEdepNi; }
 
 private:
     G4bool fEnteredSiC;
     G4double fTotalEdep;
+    G4double fTotalEdepNi;
 };
 
 #endif

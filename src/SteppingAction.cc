@@ -32,21 +32,26 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
     if (!prePV || !postPV) return;
 
     G4LogicalVolume* postLV = postPV->GetLogicalVolume();
-    G4LogicalVolume* preLV  = prePV->GetLogicalVolume();
 
-    if (postLV->GetName() == "LogicalNi")
+    G4String postLVName = postLV->GetName();
+
+    if (postLVName == "LogicalNi")
     {
         G4double edepNi = step->GetTotalEnergyDeposit();
-        if (edepNi > 0. && fRunAction)
+        if (edepNi > 0.)
         {
-            fRunAction->AddEnergyInNi(edepNi);
-            
-            G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
+            fEventAction->AddEdepNi(edepNi);
+            if (fRunAction)
+            {
+                fRunAction->AddEnergyInNi(edepNi);
+            }
         }
     }
-
-    if (postLV->GetName() == "LogicalSic")
+    else if (postLVName == "LogicalSic")
     {
+        // Mark that this event's particle has entered SiC
+        fEventAction->SetEnteredSiC();
+
         G4double edep = step->GetTotalEnergyDeposit();
         
         if (edep > 0.)
@@ -57,11 +62,11 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
                 fRunAction->AddEnergyInSiC(edep);
             }
 
+            // Correct depth calculation:
+            // Ni is centered at z=0, occupies [-Ni_Z/2, +Ni_Z/2]
+            // SiC front surface is at z = +Ni_Z/2
             G4double postPointZ = postPoint->GetPosition().z();
-            
-            G4double sicFrontSurfaceZ = fDetector->GetNiThickness();
-            
-
+            G4double sicFrontSurfaceZ = fDetector->GetNiThickness() / 2.0;
             G4double depth = postPointZ - sicFrontSurfaceZ;
             
             if (depth >= 0. && depth <= fDetector->GetSicThickness())
@@ -70,11 +75,5 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
                 analysisManager->FillH1(0, depth, edep);
             }
         }
-    }
-    
-
-    if ( postLV->GetName() == "LogicalSic" )
-    {
-        fEventAction->SetEnteredSiC();
     }
 }

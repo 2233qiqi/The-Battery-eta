@@ -1010,4 +1010,4 @@
 /gps/source/multiplevertex true
 
 # 运行 X 个事件
-/run/beamOn 1000000
+/run/beamOn 1000
