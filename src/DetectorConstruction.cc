@@ -14,7 +14,7 @@
 
 DetectorConstruction :: DetectorConstruction() :G4VUserDetectorConstruction(),
     fMessenger(nullptr),
-    Sic_Z(100*um),
+    Sic_Z(1*cm),
     Ti_Z(100*um),
     fSourceHalfZ(100 *um)
 {

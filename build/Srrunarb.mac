@@ -14,7 +14,7 @@
 /gps/pos/shape Para
 /gps/pos/halfx 0.5 cm    # 半长 X 方向 (总长1 cm)
 /gps/pos/halfy 0.5 cm    # 半长 Y 方向 (总长1 cm)
-/gps/pos/halfz 50 um    # 半长 Z 方向 (总长0.2 um)
+/gps/pos/halfz 0.2 cm    # 半长 Z 方向 (总长0.2 um)
 /gps/pos/centre 0 0 0 cm
 /gps/ang/type iso        # 各向同性
 # 能谱：自定义 Arb
@@ -1010,4 +1010,4 @@
 /gps/source/multiplevertex true
 
 # 运行 X 个事件
-/run/beamOn 1000
+/run/beamOn 100000
